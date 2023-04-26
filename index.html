@@ -1,0 +1,3177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet-Shop</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  </head>
+  <body class="font-Helvetica relative">
+    <!-- 
+        Header
+     -->
+    <header>
+      <!-- Top Header -->
+      <div class="bg-purpel text-white text-sm py-2">
+        <div
+          class="flex items-center justify-center px-4 lg:justify-between xl:container xl:m-auto"
+        >
+          <div class="flex md:hidden lg:flex">
+            <a href="" class="mr-6 hover:text-primary"
+              ><i class="fa-solid fa-location-dot mr-2"></i>Find a Store</a
+            >
+            <a href="" class="hover:text-primary"
+              ><i class="fa-solid fa-truck-arrow-right mr-2"></i>Order
+              Traking</a
+            >
+          </div>
+          <div class="hidden items-center md:flex">
+            <span class="rounded-full bg-secondry py-1 px-2 font-bold mr-3"
+              >15% Off</span
+            >
+            <p>$50+ when you buy online & pick up in-store</p>
+          </div>
+          <div class="hidden lg:flex">
+            <ul class="flex items-center">
+              <li
+                class="font-semibold relative mr-10 hover:text-primary cursor-pointer"
+              >
+                USD
+                <i class="fa-solid fa-angle-down"></i>
+                <ul
+                  class="hidden text-color flex-col items-start justify-center font-medium bg-white absolute min-w-fit w-full px-2"
+                >
+                  <li class="my-1 p-2"><a href="#">EURU</a></li>
+                  <li class="my-1 p-2"><a href="#">TOMAN</a></li>
+                </ul>
+              </li>
+              <li
+                class="font-semibold relative hover:text-primary cursor-pointer"
+              >
+                English
+                <i class="fa-solid fa-angle-down"></i>
+                <ul
+                  class="hidden text-color flex-col items-start justify-center font-medium bg-white absolute min-w-fit w-full px-2"
+                >
+                  <li class="my-1 p-2"><a href="#">Persian</a></li>
+                  <li class="my-1 p-2"><a href="#">German</a></li>
+                  <li class="my-1 p-2"><a href="#">italian</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- NavBar -->
+      <section
+        class="container m-auto py-5 flex items-center justify-between px-4"
+      >
+        <span
+          class="bg-black absolute top-0 left-0 w-full h-full z-20 bg-opacity-60 hidden lg:hidden"
+          data-menu-btn="background"
+        ></span>
+        <a href="index.html"><img src="assets/images/logo.svg" alt="Logo" /></a>
+        <nav
+          class="fixed top-0 left-0 bg-white w-full font-semibold max-w-sm z-30 h-full -translate-x-96 transition-all duration-500 lg:relative lg:translate-x-0 lg:transition-none"
+          data-menu
+        >
+          <div
+            class="flex items-center justify-between bg-slate-200 py-4 px-6 lg:hidden"
+          >
+            <h2>Main Menu</h2>
+            <span data-menu-btn="close"
+              ><i class="fa-solid fa-xmark text-xl"></i
+            ></span>
+          </div>
+          <ul
+            class="p-6 text-base lg:p-0 lg:flex lg:items-center lg:justify-center"
+          >
+            <li class="border-b pb-4 lg:border-none lg:p-0 lg:mx-4">
+              <a
+                href="#"
+                class="hover:text-primary relative before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:-bottom-2 before:bg-secondry before:h-0.5 before:w-0 hover:before:w-full after:transition-all after:duration-500 after:content-[''] after:absolute after:right-0 after:-bottom-2 after:bg-secondry after:h-0.5 after:w-0 hover:after:w-full"
+                >Home</a
+              >
+            </li>
+            <li class="border-b py-4 lg:border-none lg:p-0 lg:mx-4">
+              <a
+                href="./assets/pages/shop.html"
+                class="hover:text-primary relative before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:-bottom-2 before:bg-secondry before:h-0.5 before:w-0 hover:before:w-full after:transition-all after:duration-500 after:content-[''] after:absolute after:right-0 after:-bottom-2 after:bg-secondry after:h-0.5 after:w-0 hover:after:w-full"
+                >Shop</a
+              >
+            </li>
+            <li class="border-b py-4 lg:border-none lg:p-0 lg:mx-4">
+              <a
+                href="./assets/pages/blog.html"
+                class="hover:text-primary relative before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:-bottom-2 before:bg-secondry before:h-0.5 before:w-0 hover:before:w-full after:transition-all after:duration-500 after:content-[''] after:absolute after:right-0 after:-bottom-2 after:bg-secondry after:h-0.5 after:w-0 hover:after:w-full"
+                >Blog</a
+              >
+            </li>
+            <li class="py-4 lg:border-none lg:p-0 lg:mx-4">
+              <a
+                href="./assets/pages/contact-us.html"
+                class="hover:text-primary relative before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:-bottom-2 before:bg-secondry before:h-0.5 before:w-0 hover:before:w-full after:transition-all after:duration-500 after:content-[''] after:absolute after:right-0 after:-bottom-2 after:bg-secondry after:h-0.5 after:w-0 hover:after:w-full"
+                >Contact</a
+              >
+            </li>
+            <li class="py-4 lg:border-none lg:p-0 lg:mx-4">
+              <a
+                href="./assets/pages/error.html"
+                class="hover:text-primary relative before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:-bottom-2 before:bg-secondry before:h-0.5 before:w-0 hover:before:w-full after:transition-all after:duration-500 after:content-[''] after:absolute after:right-0 after:-bottom-2 after:bg-secondry after:h-0.5 after:w-0 hover:after:w-full"
+                >Error404</a
+              >
+            </li>
+          </ul>
+          <div class="absolute bottom-0 left-0 w-full lg:hidden">
+            <figure class="flex items-center mx-6 border-t py-4">
+              <img
+                src="./assets/images/en.jpg"
+                alt="English-Flag"
+                class="w-6 h-4 mr-3"
+              />
+              <img
+                src="./assets/images/de.jpg"
+                alt="Germany-Flag"
+                class="w-6 h-4 mr-3"
+              />
+              <img
+                src="./assets/images/it.jpg"
+                alt="italy-Flag"
+                class="w-6 h-4 mr-3"
+              />
+            </figure>
+          </div>
+        </nav>
+        <div class="hidden relative w-full max-w-xs lg:flex">
+          <input
+            type="text"
+            placeholder="Enter Your Email..."
+            class="bg-inp rounded-full p-3 w-full focus:outline-purple-600 text-xs"
+          />
+          <span
+            class="bg-purpel rounded-full absolute right-1.5 top-1.5 cursor-pointer w-7 h-7 flex items-center justify-center"
+            ><i class="fa-solid fa-magnifying-glass text-white text-xs"></i
+          ></span>
+        </div>
+        <div
+          class="fixed bottom-0 left-0 w-full bg-white z-10 lg:relative lg:w-auto"
+        >
+          <div class="flex items-center justify-between">
+            <a
+              href="./assets/pages/login-regester.html"
+              class="border border-collapse flex items-center justify-center flex-1 py-3 hover:text-primary lg:py-0 lg:border-none lg:flex-auto lg:mr-10"
+              ><i class="fa-regular fa-user text-2xl"></i
+            ></a>
+            <a
+              href="./assets/pages/wishlist.html"
+              class="border border-collapse flex items-center justify-center flex-1 py-3 hover:text-primary lg:py-0 lg:border-none lg:flex-auto lg:mr-10"
+              ><i class="fa-regular fa-heart text-2xl"></i
+            ></a>
+            <a
+              href="./assets/pages/cart.html"
+              class="border border-collapse flex items-center justify-center flex-1 py-3 hover:text-primary lg:py-0 lg:border-none lg:flex-auto"
+              ><i class="fa-solid fa-cart-shopping text-2xl"></i
+            ></a>
+          </div>
+        </div>
+        <span class="lg:hidden z-20" data-menu-btn="open"
+          ><i class="fa-solid fa-bars text-2xl cursor-pointer"></i
+        ></span>
+      </section>
+      <!-- Slider -->
+      <div>
+        <div class="h-780 w-full overflow-hidden">
+          <div class="headerSwiper w-full overflow-hidden relative flex items-center justify-center">
+            <div class="hidden md:flex gap-4 items-center justify-between px-5 z-50 w-full absolute ">
+              <div class="slider-swiper-button-prev rounded-full border py-3 px-5 flex items-center justify-center cursor-pointer hover:bg-secondry hover:text-white"><i class="fa-solid fa-angle-left text-3xl"></i></div>
+              <div class="slider-swiper-button-next rounded-full border py-3 px-5 flex items-center justify-center cursor-pointer hover:bg-secondry hover:text-white"><i class="fa-solid fa-angle-right text-3xl"></i></div>
+            </div>
+            <div class="swiper-wrapper w-full">
+              <div class="swiper-slide h-780 bg-gray-100 w-full">
+                <div class="flex flex-col items-center justify-evenly py-10 md:p-20 md:flex-row">
+                  <div class="font-bold text-center md:text-start mb-20 md:m-0">
+                    <p class="text-primary text-sm mb-2">GET 10% DISCOUNT</p>
+                    <h2 class="text-2xl md:text-3xl lg:text-6xl">BEST FOOD FOR</h2>
+                    <h2 class="text-2xl md:text-3xl lg:text-6xl mb-4">YOUR DOG</h2>
+                    <p class="text-xl font-extralight">Help ypur dog manitian a healthier weight</p>
+                    <p class="text-xl font-extralight mb-10">with.</p>
+                    <button class="bg-secondary text-white py-3 px-10 rounded-full transition-all duration-300 hover:bg-secondry">Shop Now <i class="fa-solid fa-angle-right bg-white rounded-full text-secondary py-1 px-2 ml-2"></i></button>
+                  </div>
+                  <div class="relative">
+                    <div class="bg-no-repeat bg-center bg-cover" style="background-image: url(./assets/images/home/rev_home2_2.png);">
+                      <img src="./assets/images/home/rev_home2_01.png" class="z-20 h-350 md:h-400 lg:h-578">
+                      <img src="./assets/images/home/rev_home2_6.png" class="absolute bottom-10 rotate-6 animate-sliderItem1">
+                      <div class="absolute -top-20 -right-10 text-primary font-semibold flex flex-col items-center justify-center w-48 h-48 text-xl bg-no-repeat bg-center bg-contain animate-sliderItem2" style="background-image: url('./assets/images/home/rev_home2.png');">
+                        <span>100%</span>
+                        <span>Organic</span>
+                        <span>Pet Food</span>
+                      </div>
+                    </div>
+                    <img src="./assets/images/home/rev_home2_5.png" class="absolute -left-24 bottom-40 animate-sliderItem3">
+                    <img src="./assets/images/home/rev_home2_3.png" class="absolute -right-20 bottom-52 animate-sliderItem3">
+                  </div>
+                  <img src="./assets/images/home/rev_home2_4.png" class="absolute right-24 bottom-20 animate-sliderItem4">
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1920 51" class="bg-white text-gray-100">
+                  <g fill="currentColor" class="nc-icon-wrapper">
+                    <g transform="matrix(.1 0 0 -.1 0 51)" fill="currentColor" stroke="none">
+                    <path class="elementor-shape-fill" d="M0 328V145l33-1c145-4 306-21 379-38 37-8 73-11 100-6 23 5 51 5 62 1 22-8 64-8 401 5 110 4 208 6 218 6 66-5 117-2 117 8 0 5 10 7 23 4 12-2 48-6 80-9 32-2 67-7 77-10s24 0 31 8c20 18 76 20 102 2 12-8 17-15 12-15-6 0-37-5-70-10-81-13-282-33-323-32-19 0-65-5-103-13-39-7-78-11-87-10-9 2-45 6-80 9-48 5-63 3-59-7 2-6 21-13 43-13 116-5 266-4 274 1 4 3 131 7 282 10 267 4 327-5 125-20-50-4-94-9-97-11-9-10 715-2 739 8 51 20 133 38 171 38 21 0 65 7 97 15 55 14 101 20 92 11-7-7-151-36-176-36-14 0-23-6-23-15 0-8 6-15 13-15 20 0 166 28 267 51 87 19 228 27 249 14 5-2 53 6 107 20s111 26 126 27c14 1 25 5 22 10-7 10 25 25 71 33 60 10 75 15 75 26 0 5-7 9-15 9s-15 5-15 10c0 6 10 10 23 10s50 5 82 12c42 8 53 13 39 18-46 17 526 47 1126 60 656 14 1800 13 1800-1 0-8 4-8 13-1 14 12 376 14 447 3l45-7-45-7c-25-3-578-9-1230-12s-1315-10-1475-15c-440-14-813-55-783-86 3-2 34 0 69 5 84 13 348 38 474 45 449 25 2801 31 3050 8 301-27 432-44 485-62 80-27 117-33 125-20 3 5 11 8 16 4 5-3 26-7 47-10 20-2 55-8 77-13 96-22 258-51 287-51 10 0 18 4 18 10 0 11-5 12-140 36-118 20-174 34-167 40 3 3 40-2 83-10 142-28 178-34 254-46 41-6 93-17 115-25s72-14 110-15c39 0 86-5 105-11 19-5 100-12 180-15s147-9 148-15c2-5 8-7 12-4 8 5 82-3 195-21 50-8 343-10 362-2 10 3 12 7 5 7-7 1-11 5-8 10s-9 11-27 14c-17 3-59 9-92 15s-103 13-155 16-111 8-130 10-70 7-112 11c-43 4-78 11-78 16 0 4 58 7 130 6 71-1 130-5 130-9s12-3 26 3c15 5 34 7 43 5 21-7 309-18 430-18 55 0 98 5 105 12 8 8-18 11-99 9-105-2-249 9-414 31-42 5-98 12-126 15-61 6-122 23-88 24 12 1 24 5 28 11 3 5 28 8 54 7 27-1 45-5 39-8-18-11 12-21 40-14 36 10 182 15 182 6 0-3 67-5 150-4 104 2 150-1 150-8 0-8 5-8 15 1 8 7 26 9 42 6 15-3 70-7 121-8s95-5 98-10 10-6 15-2c17 10 218 14 224 5 2-5 32-1 64 9 33 11 106 22 163 25 56 3 117 8 133 11 17 2 50 6 76 7 25 2 51 7 57 11 7 4 24 1 37-8s32-16 41-16c10 0 25-7 33-14 14-13 31-13 131-1 144 18 229 31 300 44 30 5 123 15 205 21 253 20 253 20 225 11-19-7-9-9 42-10 47-1 71 3 82 14 8 8 20 15 28 15 7 0 64 18 128 39 203 69 373 95 501 76 26-4 80-1 120 5 173 28 1252 30 1337 2 17-6 32-7 32-2 0 4 64 6 143 4 126-3 191-8 422-31 33-3 85-6 115-7 91-3 234-18 250-26 9-5 49-11 90-15s94-11 118-16 71-10 105-10c64-1 201-17 227-26 19-7 43-4 50 7 3 5 23 5 45 0s67-14 100-20c79-16 158-54 220-106 32-27 36-27 177-29 79 0 184 2 233 6 52 4 97 3 107-2 12-6 18-6 18 1 0 6 48 10 133 10 72 0 141 0 152 1 11 0 23 5 27 12s8 8 8 1c0-6 20-9 48-8 26 1 68-2 94-7 35-6 54-5 75 6 32 17 65 19 78 6 6-5 19-11 30-13 34-7-195-37-410-54-33-2-84-8-114-13s-88-5-129 0c-42 5-78 6-81 4-14-15 25-24 109-25 114-2 408 9 431 16 9 2 28 0 43-5 14-6 26-7 26-3 0 5 59 9 131 9 138 2 164-11 44-20-217-17-432-40-445-48-9-6 95-8 275-5 334 5 491 12 555 26 25 5 82 11 127 14 46 3 88 8 94 11 20 13 124 34 166 35 23 0 54 5 69 10 24 9 85 21 184 35 30 5 29 3-10-9-53-17-207-46-244-46-17 0-26-5-26-16 0-14 7-16 43-10 95 14 168 27 277 49 63 14 120 21 125 17 18-13 137-3 226 19 48 12 100 21 117 21s43 5 57 10c23 9 26 8 21-5-4-12 6-15 62-16 131-2 183 5 357 50 98 25 117 26 158 4 18-9 36-16 40-15 9 3 60-24 96-50 13-10 28-18 32-18 5 0 9 88 9 195v195H0V328zm7085-28c41-7 33-8-47-6-54 0-98 4-98 9 0 9 80 8 145-3zm4478-17c-7-2-21-2-30 0-10 3-4 5 12 5 17 0 24-2 18-5zm-8230-40c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm65 0c-10-2-26-2-35 0-10 3-2 5 17 5s27-2 18-5zm4311-69c10-9-35-3-49 6-11 8-7 9 15 4 17-4 32-8 34-10zm10241-34c-8-5-24-9-35-9-16 1-16 2 5 9 35 11 48 11 30 0zm-9270-32c0-8-99 0-109 9-3 2 21 3 52 2s57-6 57-11zm-5875-8c-28-12-47-12-40 0 3 6 18 10 33 9 24 0 25-1 7-9zm-80-10c-16-5-40-12-52-15-14-5-23-3-23 3 0 12 29 19 75 20h30l-30-8zm14260-20c-26-11-55-12-55-2 0 5 17 9 38 10 29 0 33-2 17-8zM8857 44c-3-3-12-4-19-1-8 3-5 6 6 6 11 1 17-2 13-5zM1835 29c-16-5-33-5-38 0-4 4 9 8 30 8 38 1 38 1 8-8zm7118 4c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm297-9c0-2-9-4-21-4-11 0-18 4-14 10 5 8 35 3 35-6zm-83 0c-3-3-12-4-19-1-8 3-5 6 6 6 11 1 17-2 13-5z"></path><path class="elementor-shape-fill" d="M13140 408c-261-19-441-38-456-46-22-12-42-12 541-11 319 0 538-5 680-15 348-25 452-29 459-18 6 10-36 21-114 28-25 3-66 9-91 14-26 5-127 14-225 20-172 10-204 12-304 27-63 8-377 9-490 1z"></path><path class="elementor-shape-fill" d="M5705 180c369-4 447-6 270-8-137-2-315-4-395-4-90 0-137-3-123-8 23-9 86-10 502-4 162 2 268 7 275 14 5 5 24 10 41 9 29-1 29-1 5-8l-25-7 24-6c12-4 33-2 45 3 11 5 48 13 81 18 36 5-191 8-580 7l-640-1 520-5z"></path><path class="elementor-shape-fill" d="M10665 170c-65-7-65-13 0-10 52 2 134 18 90 17-16 0-57-3-90-7z"></path><path class="elementor-shape-fill" d="M5040 138c0-4 14-8 30-8 17 0 30 2 30 4s-13 6-30 8c-16 3-30 1-30-4z"></path><path class="elementor-shape-fill" d="M5215 140c-25-11 48-11 150 0l70 7-100 1c-55 0-109-3-120-8z"></path><path class="elementor-shape-fill" d="M18315 126c-26-7-35-14-25-18 20-7 140 12 140 23 0 13-68 10-115-5z"></path>
+                    <path class="elementor-shape-fill" d="M3403 113c15-2 37-2 50 0 12 2 0 4-28 4-27 0-38-2-22-4z"></path>
+                    <path class="elementor-shape-fill" d="M3171 89c-50-15-30-22 36-13 32 4 64 6 72 5 7-1 10 2 6 8-8 13-67 13-114 0z"></path>
+                    <path class="elementor-shape-fill" d="M948 83c7-3 16-2 19 1 4 3-2 6-13 5-11 0-14-3-6-6z"></path>
+                    <path class="elementor-shape-fill" d="M7640 60c20-13 43-13 35 0-3 6-16 10-28 10-18 0-19-2-7-10z"></path>
+                    <path class="elementor-shape-fill" d="M7697 49c7-7 15-10 18-7s-2 9-12 12c-14 6-15 5-6-5z"></path>
+                    <path class="elementor-shape-fill" d="M8261 46c10-8 89-13 89-5 0 5-21 9-47 9-25 0-44-2-42-4z"></path>
+                    <path class="elementor-shape-fill" d="M17935 20c-8-13 15-13 35 0 12 8 11 10-7 10-12 0-25-4-28-10z"></path>
+                    <path class="elementor-shape-fill" d="M17285 9c-26-6-23-7 18-8 26 0 47 1 47 3 0 9-37 12-65 5z"></path>
+                    <path class="elementor-shape-fill" d="M17900 10c-9-6-10-10-3-10 6 0 15 5 18 10 8 12 4 12-15 0z"></path>
+                    <path class="elementor-shape-fill" d="M17858 3c7-3 16-2 19 1 4 3-2 6-13 5-11 0-14-3-6-6z"></path>
+                  </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="swiper-slide h-780 bg-blue-100 w-full">
+                <div class="flex flex-col items-center justify-evenly py-10 md:p-20 md:flex-row">
+                  <div class="font-extrabold text-center md:text-start mb-20 md:m-0">
+                    <p class="text-primary text-sm mb-2">FAST & FREE SHOPING</p>
+                    <h2 class="text-2xl md:text-3xl lg:text-6xl">Indestructible</h2>
+                    <h2 class="text-2xl md:text-3xl lg:text-6xl mb-4">Dog Toys</h2>
+                    <p class="text-xl font-extralight mb-10">Good for agressive chewers!</p>
+                    <button class="bg-secondary text-white py-3 px-10 rounded-full transition-all duration-300 hover:bg-secondry">Shop Now <i class="fa-solid fa-angle-right bg-white rounded-full text-secondary py-1 px-2 ml-2"></i></button>
+                  </div>
+                  <div class="relative">
+                    <div class="bg-no-repeat bg-center bg-cover">
+                      <img src="./assets/images/home/ressv_home2_9.png" class="h-350 md:h-400 lg:h-578">
+                      <img src="./assets/images/home/rev_home2_6.png" class="absolute bottom-10 rotate-6 animate-sliderItem1">
+                      <div class="absolute -top-20 -right-10 text-primary font-semibold flex flex-col items-center justify-center w-48 h-48 text-xl bg-no-repeat bg-center bg-contain animate-sliderItem2" style="background-image: url('./assets/images/home/rev_home2.png');">
+                        <span>100%</span>
+                        <span>Organic</span>
+                        <span>Pet Food</span>
+                      </div>
+                    </div>
+                    <img src="./assets/images/home/rev_home2_5.png" class="absolute -left-24 bottom-40 animate-sliderItem3">
+                    <img src="./assets/images/home/rev_home2_3.png" class="absolute -right-20 bottom-52 animate-sliderItem3">
+                  </div>
+                  <img src="./assets/images/home/rev_home2_4.png" class="absolute right-24 bottom-20 animate-sliderItem4">
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1920 51" class="bg-white text-blue-100">
+                  <g fill="currentColor" class="nc-icon-wrapper">
+                    <g transform="matrix(.1 0 0 -.1 0 51)" fill="currentColor" stroke="none">
+                    <path class="elementor-shape-fill" d="M0 328V145l33-1c145-4 306-21 379-38 37-8 73-11 100-6 23 5 51 5 62 1 22-8 64-8 401 5 110 4 208 6 218 6 66-5 117-2 117 8 0 5 10 7 23 4 12-2 48-6 80-9 32-2 67-7 77-10s24 0 31 8c20 18 76 20 102 2 12-8 17-15 12-15-6 0-37-5-70-10-81-13-282-33-323-32-19 0-65-5-103-13-39-7-78-11-87-10-9 2-45 6-80 9-48 5-63 3-59-7 2-6 21-13 43-13 116-5 266-4 274 1 4 3 131 7 282 10 267 4 327-5 125-20-50-4-94-9-97-11-9-10 715-2 739 8 51 20 133 38 171 38 21 0 65 7 97 15 55 14 101 20 92 11-7-7-151-36-176-36-14 0-23-6-23-15 0-8 6-15 13-15 20 0 166 28 267 51 87 19 228 27 249 14 5-2 53 6 107 20s111 26 126 27c14 1 25 5 22 10-7 10 25 25 71 33 60 10 75 15 75 26 0 5-7 9-15 9s-15 5-15 10c0 6 10 10 23 10s50 5 82 12c42 8 53 13 39 18-46 17 526 47 1126 60 656 14 1800 13 1800-1 0-8 4-8 13-1 14 12 376 14 447 3l45-7-45-7c-25-3-578-9-1230-12s-1315-10-1475-15c-440-14-813-55-783-86 3-2 34 0 69 5 84 13 348 38 474 45 449 25 2801 31 3050 8 301-27 432-44 485-62 80-27 117-33 125-20 3 5 11 8 16 4 5-3 26-7 47-10 20-2 55-8 77-13 96-22 258-51 287-51 10 0 18 4 18 10 0 11-5 12-140 36-118 20-174 34-167 40 3 3 40-2 83-10 142-28 178-34 254-46 41-6 93-17 115-25s72-14 110-15c39 0 86-5 105-11 19-5 100-12 180-15s147-9 148-15c2-5 8-7 12-4 8 5 82-3 195-21 50-8 343-10 362-2 10 3 12 7 5 7-7 1-11 5-8 10s-9 11-27 14c-17 3-59 9-92 15s-103 13-155 16-111 8-130 10-70 7-112 11c-43 4-78 11-78 16 0 4 58 7 130 6 71-1 130-5 130-9s12-3 26 3c15 5 34 7 43 5 21-7 309-18 430-18 55 0 98 5 105 12 8 8-18 11-99 9-105-2-249 9-414 31-42 5-98 12-126 15-61 6-122 23-88 24 12 1 24 5 28 11 3 5 28 8 54 7 27-1 45-5 39-8-18-11 12-21 40-14 36 10 182 15 182 6 0-3 67-5 150-4 104 2 150-1 150-8 0-8 5-8 15 1 8 7 26 9 42 6 15-3 70-7 121-8s95-5 98-10 10-6 15-2c17 10 218 14 224 5 2-5 32-1 64 9 33 11 106 22 163 25 56 3 117 8 133 11 17 2 50 6 76 7 25 2 51 7 57 11 7 4 24 1 37-8s32-16 41-16c10 0 25-7 33-14 14-13 31-13 131-1 144 18 229 31 300 44 30 5 123 15 205 21 253 20 253 20 225 11-19-7-9-9 42-10 47-1 71 3 82 14 8 8 20 15 28 15 7 0 64 18 128 39 203 69 373 95 501 76 26-4 80-1 120 5 173 28 1252 30 1337 2 17-6 32-7 32-2 0 4 64 6 143 4 126-3 191-8 422-31 33-3 85-6 115-7 91-3 234-18 250-26 9-5 49-11 90-15s94-11 118-16 71-10 105-10c64-1 201-17 227-26 19-7 43-4 50 7 3 5 23 5 45 0s67-14 100-20c79-16 158-54 220-106 32-27 36-27 177-29 79 0 184 2 233 6 52 4 97 3 107-2 12-6 18-6 18 1 0 6 48 10 133 10 72 0 141 0 152 1 11 0 23 5 27 12s8 8 8 1c0-6 20-9 48-8 26 1 68-2 94-7 35-6 54-5 75 6 32 17 65 19 78 6 6-5 19-11 30-13 34-7-195-37-410-54-33-2-84-8-114-13s-88-5-129 0c-42 5-78 6-81 4-14-15 25-24 109-25 114-2 408 9 431 16 9 2 28 0 43-5 14-6 26-7 26-3 0 5 59 9 131 9 138 2 164-11 44-20-217-17-432-40-445-48-9-6 95-8 275-5 334 5 491 12 555 26 25 5 82 11 127 14 46 3 88 8 94 11 20 13 124 34 166 35 23 0 54 5 69 10 24 9 85 21 184 35 30 5 29 3-10-9-53-17-207-46-244-46-17 0-26-5-26-16 0-14 7-16 43-10 95 14 168 27 277 49 63 14 120 21 125 17 18-13 137-3 226 19 48 12 100 21 117 21s43 5 57 10c23 9 26 8 21-5-4-12 6-15 62-16 131-2 183 5 357 50 98 25 117 26 158 4 18-9 36-16 40-15 9 3 60-24 96-50 13-10 28-18 32-18 5 0 9 88 9 195v195H0V328zm7085-28c41-7 33-8-47-6-54 0-98 4-98 9 0 9 80 8 145-3zm4478-17c-7-2-21-2-30 0-10 3-4 5 12 5 17 0 24-2 18-5zm-8230-40c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm65 0c-10-2-26-2-35 0-10 3-2 5 17 5s27-2 18-5zm4311-69c10-9-35-3-49 6-11 8-7 9 15 4 17-4 32-8 34-10zm10241-34c-8-5-24-9-35-9-16 1-16 2 5 9 35 11 48 11 30 0zm-9270-32c0-8-99 0-109 9-3 2 21 3 52 2s57-6 57-11zm-5875-8c-28-12-47-12-40 0 3 6 18 10 33 9 24 0 25-1 7-9zm-80-10c-16-5-40-12-52-15-14-5-23-3-23 3 0 12 29 19 75 20h30l-30-8zm14260-20c-26-11-55-12-55-2 0 5 17 9 38 10 29 0 33-2 17-8zM8857 44c-3-3-12-4-19-1-8 3-5 6 6 6 11 1 17-2 13-5zM1835 29c-16-5-33-5-38 0-4 4 9 8 30 8 38 1 38 1 8-8zm7118 4c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm297-9c0-2-9-4-21-4-11 0-18 4-14 10 5 8 35 3 35-6zm-83 0c-3-3-12-4-19-1-8 3-5 6 6 6 11 1 17-2 13-5z"></path><path class="elementor-shape-fill" d="M13140 408c-261-19-441-38-456-46-22-12-42-12 541-11 319 0 538-5 680-15 348-25 452-29 459-18 6 10-36 21-114 28-25 3-66 9-91 14-26 5-127 14-225 20-172 10-204 12-304 27-63 8-377 9-490 1z"></path><path class="elementor-shape-fill" d="M5705 180c369-4 447-6 270-8-137-2-315-4-395-4-90 0-137-3-123-8 23-9 86-10 502-4 162 2 268 7 275 14 5 5 24 10 41 9 29-1 29-1 5-8l-25-7 24-6c12-4 33-2 45 3 11 5 48 13 81 18 36 5-191 8-580 7l-640-1 520-5z"></path><path class="elementor-shape-fill" d="M10665 170c-65-7-65-13 0-10 52 2 134 18 90 17-16 0-57-3-90-7z"></path><path class="elementor-shape-fill" d="M5040 138c0-4 14-8 30-8 17 0 30 2 30 4s-13 6-30 8c-16 3-30 1-30-4z"></path><path class="elementor-shape-fill" d="M5215 140c-25-11 48-11 150 0l70 7-100 1c-55 0-109-3-120-8z"></path><path class="elementor-shape-fill" d="M18315 126c-26-7-35-14-25-18 20-7 140 12 140 23 0 13-68 10-115-5z"></path>
+                    <path class="elementor-shape-fill" d="M3403 113c15-2 37-2 50 0 12 2 0 4-28 4-27 0-38-2-22-4z"></path>
+                    <path class="elementor-shape-fill" d="M3171 89c-50-15-30-22 36-13 32 4 64 6 72 5 7-1 10 2 6 8-8 13-67 13-114 0z"></path>
+                    <path class="elementor-shape-fill" d="M948 83c7-3 16-2 19 1 4 3-2 6-13 5-11 0-14-3-6-6z"></path>
+                    <path class="elementor-shape-fill" d="M7640 60c20-13 43-13 35 0-3 6-16 10-28 10-18 0-19-2-7-10z"></path>
+                    <path class="elementor-shape-fill" d="M7697 49c7-7 15-10 18-7s-2 9-12 12c-14 6-15 5-6-5z"></path>
+                    <path class="elementor-shape-fill" d="M8261 46c10-8 89-13 89-5 0 5-21 9-47 9-25 0-44-2-42-4z"></path>
+                    <path class="elementor-shape-fill" d="M17935 20c-8-13 15-13 35 0 12 8 11 10-7 10-12 0-25-4-28-10z"></path>
+                    <path class="elementor-shape-fill" d="M17285 9c-26-6-23-7 18-8 26 0 47 1 47 3 0 9-37 12-65 5z"></path>
+                    <path class="elementor-shape-fill" d="M17900 10c-9-6-10-10-3-10 6 0 15 5 18 10 8 12 4 12-15 0z"></path>
+                    <path class="elementor-shape-fill" d="M17858 3c7-3 16-2 19 1 4 3-2 6-13 5-11 0-14-3-6-6z"></path>
+                  </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="swiper-slide h-780 bg-pink-100 w-full relative">
+                <div class=" absolute right-0 top-0 bg-no-repeat flex items-start justify-end p-4" style="background-image: url(./assets/images/home/rev_home7_011.png);">
+                  <img src="./assets/images/home/rev_home7_010.png">
+                </div>
+                <div class="flex flex-col items-center justify-evenly py-10 md:p-20 md:flex-row">
+                  <div class="font-extrabold text-center md:text-start mb-20 md:m-0">
+                    <h2 class="text-2xl md:text-3xl lg:text-6xl">Felt Cat Beds</h2>
+                    <h2 class="text-2xl md:text-3xl lg:text-6xl mb-4">For Indoor Cats</h2>
+                    <p class="text-xl font-bold mb-10">Felt products that cats love</p>
+                    <p class="text-xl font-bold">Limited time offer</p>
+                    <p class="text-primary text-xl md:text-4xl flex items-center mb-10">$69.99<span class="text-base text-lighter ml-2">$99.99</span></p>
+                    <button class="bg-secondary text-white py-3 px-10 rounded-full transition-all duration-300 hover:bg-secondry">Shop Now <i class="fa-solid fa-angle-right bg-white rounded-full text-secondary py-1 px-2 ml-2"></i></button>
+                  </div>
+                  <div class="relative z-10">
+                    <div class="relative z-10">
+                      <div class="bg-no-repeat bg-center bg-cover">
+                        <img src="./assets/images/home/rev_home7_16.png" class="h-350 md:h-400 lg:h-578">
+                      </div>
+                      <div class="absolute -right-32 top-20 animate-sliderItem1">
+                        <img src="./assets/images/home/rev_home7_8.png">
+                        <img src="./assets/images/home/rev_home7_9.png" class="my-32 ml-10">
+                        <img src="./assets/images/home/rev_home7_12.png">
+                      </div>
+                      <div class="absolute -left-10 top-20 animate-sliderItem3">
+                        <img src="./assets/images/home/rev_home7_14.png" class="ml-20">
+                        <img src="./assets/images/home/rev_home7_7.png" class="my-32 -ml-5">
+                        <img src="./assets/images/home/rev_home7_14.png" class="-ml-20">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1920 51" class="bg-white text-pink-100">
+                  <g fill="currentColor" class="nc-icon-wrapper">
+                    <g transform="matrix(.1 0 0 -.1 0 51)" fill="currentColor" stroke="none">
+                    <path class="elementor-shape-fill" d="M0 328V145l33-1c145-4 306-21 379-38 37-8 73-11 100-6 23 5 51 5 62 1 22-8 64-8 401 5 110 4 208 6 218 6 66-5 117-2 117 8 0 5 10 7 23 4 12-2 48-6 80-9 32-2 67-7 77-10s24 0 31 8c20 18 76 20 102 2 12-8 17-15 12-15-6 0-37-5-70-10-81-13-282-33-323-32-19 0-65-5-103-13-39-7-78-11-87-10-9 2-45 6-80 9-48 5-63 3-59-7 2-6 21-13 43-13 116-5 266-4 274 1 4 3 131 7 282 10 267 4 327-5 125-20-50-4-94-9-97-11-9-10 715-2 739 8 51 20 133 38 171 38 21 0 65 7 97 15 55 14 101 20 92 11-7-7-151-36-176-36-14 0-23-6-23-15 0-8 6-15 13-15 20 0 166 28 267 51 87 19 228 27 249 14 5-2 53 6 107 20s111 26 126 27c14 1 25 5 22 10-7 10 25 25 71 33 60 10 75 15 75 26 0 5-7 9-15 9s-15 5-15 10c0 6 10 10 23 10s50 5 82 12c42 8 53 13 39 18-46 17 526 47 1126 60 656 14 1800 13 1800-1 0-8 4-8 13-1 14 12 376 14 447 3l45-7-45-7c-25-3-578-9-1230-12s-1315-10-1475-15c-440-14-813-55-783-86 3-2 34 0 69 5 84 13 348 38 474 45 449 25 2801 31 3050 8 301-27 432-44 485-62 80-27 117-33 125-20 3 5 11 8 16 4 5-3 26-7 47-10 20-2 55-8 77-13 96-22 258-51 287-51 10 0 18 4 18 10 0 11-5 12-140 36-118 20-174 34-167 40 3 3 40-2 83-10 142-28 178-34 254-46 41-6 93-17 115-25s72-14 110-15c39 0 86-5 105-11 19-5 100-12 180-15s147-9 148-15c2-5 8-7 12-4 8 5 82-3 195-21 50-8 343-10 362-2 10 3 12 7 5 7-7 1-11 5-8 10s-9 11-27 14c-17 3-59 9-92 15s-103 13-155 16-111 8-130 10-70 7-112 11c-43 4-78 11-78 16 0 4 58 7 130 6 71-1 130-5 130-9s12-3 26 3c15 5 34 7 43 5 21-7 309-18 430-18 55 0 98 5 105 12 8 8-18 11-99 9-105-2-249 9-414 31-42 5-98 12-126 15-61 6-122 23-88 24 12 1 24 5 28 11 3 5 28 8 54 7 27-1 45-5 39-8-18-11 12-21 40-14 36 10 182 15 182 6 0-3 67-5 150-4 104 2 150-1 150-8 0-8 5-8 15 1 8 7 26 9 42 6 15-3 70-7 121-8s95-5 98-10 10-6 15-2c17 10 218 14 224 5 2-5 32-1 64 9 33 11 106 22 163 25 56 3 117 8 133 11 17 2 50 6 76 7 25 2 51 7 57 11 7 4 24 1 37-8s32-16 41-16c10 0 25-7 33-14 14-13 31-13 131-1 144 18 229 31 300 44 30 5 123 15 205 21 253 20 253 20 225 11-19-7-9-9 42-10 47-1 71 3 82 14 8 8 20 15 28 15 7 0 64 18 128 39 203 69 373 95 501 76 26-4 80-1 120 5 173 28 1252 30 1337 2 17-6 32-7 32-2 0 4 64 6 143 4 126-3 191-8 422-31 33-3 85-6 115-7 91-3 234-18 250-26 9-5 49-11 90-15s94-11 118-16 71-10 105-10c64-1 201-17 227-26 19-7 43-4 50 7 3 5 23 5 45 0s67-14 100-20c79-16 158-54 220-106 32-27 36-27 177-29 79 0 184 2 233 6 52 4 97 3 107-2 12-6 18-6 18 1 0 6 48 10 133 10 72 0 141 0 152 1 11 0 23 5 27 12s8 8 8 1c0-6 20-9 48-8 26 1 68-2 94-7 35-6 54-5 75 6 32 17 65 19 78 6 6-5 19-11 30-13 34-7-195-37-410-54-33-2-84-8-114-13s-88-5-129 0c-42 5-78 6-81 4-14-15 25-24 109-25 114-2 408 9 431 16 9 2 28 0 43-5 14-6 26-7 26-3 0 5 59 9 131 9 138 2 164-11 44-20-217-17-432-40-445-48-9-6 95-8 275-5 334 5 491 12 555 26 25 5 82 11 127 14 46 3 88 8 94 11 20 13 124 34 166 35 23 0 54 5 69 10 24 9 85 21 184 35 30 5 29 3-10-9-53-17-207-46-244-46-17 0-26-5-26-16 0-14 7-16 43-10 95 14 168 27 277 49 63 14 120 21 125 17 18-13 137-3 226 19 48 12 100 21 117 21s43 5 57 10c23 9 26 8 21-5-4-12 6-15 62-16 131-2 183 5 357 50 98 25 117 26 158 4 18-9 36-16 40-15 9 3 60-24 96-50 13-10 28-18 32-18 5 0 9 88 9 195v195H0V328zm7085-28c41-7 33-8-47-6-54 0-98 4-98 9 0 9 80 8 145-3zm4478-17c-7-2-21-2-30 0-10 3-4 5 12 5 17 0 24-2 18-5zm-8230-40c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm65 0c-10-2-26-2-35 0-10 3-2 5 17 5s27-2 18-5zm4311-69c10-9-35-3-49 6-11 8-7 9 15 4 17-4 32-8 34-10zm10241-34c-8-5-24-9-35-9-16 1-16 2 5 9 35 11 48 11 30 0zm-9270-32c0-8-99 0-109 9-3 2 21 3 52 2s57-6 57-11zm-5875-8c-28-12-47-12-40 0 3 6 18 10 33 9 24 0 25-1 7-9zm-80-10c-16-5-40-12-52-15-14-5-23-3-23 3 0 12 29 19 75 20h30l-30-8zm14260-20c-26-11-55-12-55-2 0 5 17 9 38 10 29 0 33-2 17-8zM8857 44c-3-3-12-4-19-1-8 3-5 6 6 6 11 1 17-2 13-5zM1835 29c-16-5-33-5-38 0-4 4 9 8 30 8 38 1 38 1 8-8zm7118 4c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm297-9c0-2-9-4-21-4-11 0-18 4-14 10 5 8 35 3 35-6zm-83 0c-3-3-12-4-19-1-8 3-5 6 6 6 11 1 17-2 13-5z"></path><path class="elementor-shape-fill" d="M13140 408c-261-19-441-38-456-46-22-12-42-12 541-11 319 0 538-5 680-15 348-25 452-29 459-18 6 10-36 21-114 28-25 3-66 9-91 14-26 5-127 14-225 20-172 10-204 12-304 27-63 8-377 9-490 1z"></path><path class="elementor-shape-fill" d="M5705 180c369-4 447-6 270-8-137-2-315-4-395-4-90 0-137-3-123-8 23-9 86-10 502-4 162 2 268 7 275 14 5 5 24 10 41 9 29-1 29-1 5-8l-25-7 24-6c12-4 33-2 45 3 11 5 48 13 81 18 36 5-191 8-580 7l-640-1 520-5z"></path><path class="elementor-shape-fill" d="M10665 170c-65-7-65-13 0-10 52 2 134 18 90 17-16 0-57-3-90-7z"></path><path class="elementor-shape-fill" d="M5040 138c0-4 14-8 30-8 17 0 30 2 30 4s-13 6-30 8c-16 3-30 1-30-4z"></path><path class="elementor-shape-fill" d="M5215 140c-25-11 48-11 150 0l70 7-100 1c-55 0-109-3-120-8z"></path><path class="elementor-shape-fill" d="M18315 126c-26-7-35-14-25-18 20-7 140 12 140 23 0 13-68 10-115-5z"></path>
+                    <path class="elementor-shape-fill" d="M3403 113c15-2 37-2 50 0 12 2 0 4-28 4-27 0-38-2-22-4z"></path>
+                    <path class="elementor-shape-fill" d="M3171 89c-50-15-30-22 36-13 32 4 64 6 72 5 7-1 10 2 6 8-8 13-67 13-114 0z"></path>
+                    <path class="elementor-shape-fill" d="M948 83c7-3 16-2 19 1 4 3-2 6-13 5-11 0-14-3-6-6z"></path>
+                    <path class="elementor-shape-fill" d="M7640 60c20-13 43-13 35 0-3 6-16 10-28 10-18 0-19-2-7-10z"></path>
+                    <path class="elementor-shape-fill" d="M7697 49c7-7 15-10 18-7s-2 9-12 12c-14 6-15 5-6-5z"></path>
+                    <path class="elementor-shape-fill" d="M8261 46c10-8 89-13 89-5 0 5-21 9-47 9-25 0-44-2-42-4z"></path>
+                    <path class="elementor-shape-fill" d="M17935 20c-8-13 15-13 35 0 12 8 11 10-7 10-12 0-25-4-28-10z"></path>
+                    <path class="elementor-shape-fill" d="M17285 9c-26-6-23-7 18-8 26 0 47 1 47 3 0 9-37 12-65 5z"></path>
+                    <path class="elementor-shape-fill" d="M17900 10c-9-6-10-10-3-10 6 0 15 5 18 10 8 12 4 12-15 0z"></path>
+                    <path class="elementor-shape-fill" d="M17858 3c7-3 16-2 19 1 4 3-2 6-13 5-11 0-14-3-6-6z"></path>
+                  </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 
+        Main
+     -->
+    <main>
+      <div class="container m-auto px-4 mt-24 relative">
+        <div class="flex flex-col sm:flex-row items-center justify-between">
+          <div class="relative">
+            <h2 class="text-3xl mb-4 font-bold sm:mb-0">
+              Best Seller Products
+            </h2>
+            <i
+              class="fa-sharp fa-solid fa-paw text-primary text-lg absolute right-100 -top-4 right-2"
+            ></i>
+            <i
+              class="fa-sharp fa-solid fa-paw text-primary text-xl rotate-45 absolute -top-3 -right-4"
+            ></i>
+          </div>
+        </div>
+        <div class="productSwiper overflow-hidden border border-dashed p-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="flex items-start">
+                <div>
+                  <img src="./assets/images/shop/product-1-1-100x100.jpg">
+                </div>
+                <div>
+                  <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                    <div>
+                      <span class="font-bold text-secondary text-lg mr-1"
+                        >$169.93</span
+                      >
+                    </div>
+                    <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                    <div>
+                      <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-regular fa-star text-xs"></i>
+                      <span class="text-lighter text-xs">(5 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex items-start">
+                <div>
+                  <img src="./assets/images/shop/product-2-1-100x100.jpg">
+                </div>
+                <div>
+                  <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                    <div>
+                      <span class="font-bold text-secondary text-lg mr-1"
+                        >$169.93</span
+                      >
+                    </div>
+                    <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                    <div>
+                      <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-regular fa-star text-xs"></i>
+                      <span class="text-lighter text-xs">(5 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex items-start">
+                <div>
+                  <img src="./assets/images/shop/product-3-1-100x100.jpg">
+                </div>
+                <div>
+                  <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                    <div>
+                      <span class="font-bold text-secondary text-lg mr-1"
+                        >$169.93</span
+                      >
+                    </div>
+                    <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                    <div>
+                      <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-regular fa-star text-xs"></i>
+                      <span class="text-lighter text-xs">(5 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex items-start">
+                <div>
+                  <img src="./assets/images/shop/product-8-1-100x100.jpg">
+                </div>
+                <div>
+                  <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                    <div>
+                      <span class="font-bold text-secondary text-lg mr-1"
+                        >$169.93</span
+                      >
+                    </div>
+                    <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                    <div>
+                      <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-regular fa-star text-xs"></i>
+                      <span class="text-lighter text-xs">(5 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex items-start">
+                <div>
+                  <img src="./assets/images/shop/product-5-1-100x100.jpg">
+                </div>
+                <div>
+                  <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                    <div>
+                      <span class="font-bold text-secondary text-lg mr-1"
+                        >$169.93</span
+                      >
+                    </div>
+                    <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                    <div>
+                      <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-regular fa-star text-xs"></i>
+                      <span class="text-lighter text-xs">(5 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex items-start">
+                <div>
+                  <img src="./assets/images/shop/product-10-1-100x100.jpg">
+                </div>
+                <div>
+                  <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                    <div>
+                      <span class="font-bold text-secondary text-lg mr-1"
+                        >$169.93</span
+                      >
+                    </div>
+                    <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                    <div>
+                      <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-regular fa-star text-xs"></i>
+                      <span class="text-lighter text-xs">(5 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex items-start">
+                <div>
+                  <img src="./assets/images/shop/product-7-1-100x100.jpg">
+                </div>
+                <div>
+                  <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                    <div>
+                      <span class="font-bold text-secondary text-lg mr-1"
+                        >$169.93</span
+                      >
+                    </div>
+                    <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                    <div>
+                      <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-regular fa-star text-xs"></i>
+                      <span class="text-lighter text-xs">(5 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex items-start">
+                <div>
+                  <img src="./assets/images/shop/product-1-1-100x100.jpg">
+                </div>
+                <div>
+                  <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                    <div>
+                      <span class="font-bold text-secondary text-lg mr-1"
+                        >$169.93</span
+                      >
+                    </div>
+                    <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                    <div>
+                      <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-regular fa-star text-xs"></i>
+                      <span class="text-lighter text-xs">(5 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex items-start">
+                <div>
+                  <img src="./assets/images/shop/product-2-1-100x100.jpg">
+                </div>
+                <div>
+                  <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                    <div>
+                      <span class="font-bold text-secondary text-lg mr-1"
+                        >$169.93</span
+                      >
+                    </div>
+                    <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                    <div>
+                      <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-regular fa-star text-xs"></i>
+                      <span class="text-lighter text-xs">(5 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex items-start">
+                <div>
+                  <img src="./assets/images/shop/product-3-1-100x100.jpg">
+                </div>
+                <div>
+                  <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                    <div>
+                      <span class="font-bold text-secondary text-lg mr-1"
+                        >$169.93</span
+                      >
+                    </div>
+                    <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                    <div>
+                      <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-regular fa-star text-xs"></i>
+                      <span class="text-lighter text-xs">(5 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex items-start">
+                <div>
+                  <img src="./assets/images/shop/product-8-1-100x100.jpg">
+                </div>
+                <div>
+                  <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                    <div>
+                      <span class="font-bold text-secondary text-lg mr-1"
+                        >$169.93</span
+                      >
+                    </div>
+                    <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                    <div>
+                      <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-regular fa-star text-xs"></i>
+                      <span class="text-lighter text-xs">(5 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex items-start">
+                <div>
+                  <img src="./assets/images/shop/product-5-1-100x100.jpg">
+                </div>
+                <div>
+                  <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                    <div>
+                      <span class="font-bold text-secondary text-lg mr-1"
+                        >$169.93</span
+                      >
+                    </div>
+                    <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                    <div>
+                      <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-regular fa-star text-xs"></i>
+                      <span class="text-lighter text-xs">(5 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex items-start">
+                <div>
+                  <img src="./assets/images/shop/product-10-1-100x100.jpg">
+                </div>
+                <div>
+                  <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                    <div>
+                      <span class="font-bold text-secondary text-lg mr-1"
+                        >$169.93</span
+                      >
+                    </div>
+                    <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                    <div>
+                      <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-regular fa-star text-xs"></i>
+                      <span class="text-lighter text-xs">(5 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex items-start">
+                <div>
+                  <img src="./assets/images/shop/product-7-1-100x100.jpg">
+                </div>
+                <div>
+                  <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                    <div>
+                      <span class="font-bold text-secondary text-lg mr-1"
+                        >$169.93</span
+                      >
+                    </div>
+                    <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                    <div>
+                      <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-regular fa-star text-xs"></i>
+                      <span class="text-lighter text-xs">(5 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container m-auto px-4">
+        <div class="flex flex-col justify-between my-10 md:flex-row gap-4">
+          <div
+            class="w-full md:w-450 mb-6 md:mb-0 overflow-hidden relative cursor-pointer rounded-md"
+          >
+            <div
+              class="w-700 h-350 md:w-500 transition-all duration-200 -translate-x-10 hover:translate-x-0"
+            >
+              <img
+                src="./assets/images/home/h1-banner1.jpg"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="font-extrabold text-white absolute top-14 left-10">
+              <div
+                class="flex items-center font-bold bg-no-repeat bg-cover bg-center w-40 h-24 p-2"
+                style="
+                  background-image: url(./assets/images/home/h1-banner7.png);
+                "
+              >
+                <span class="text-7xl mr-2 text-primary">50</span>
+                <div class="flex flex-col text-primary">
+                  <span class="text-xl">%</span>
+                  <span class="text-xl">off</span>
+                </div>
+              </div>
+              <h2 class="text-4xl mt-4">Pet Food &</h2>
+              <h2 class="text-4xl">Accessories</h2>
+              <p class="font-semibold mt-8">Everything for your pet.</p>
+            </div>
+          </div>
+          <div
+            class="w-full md:w-450 mb-6 md:mb-0 overflow-hidden relative cursor-pointer rounded-md"
+          >
+            <div
+              class="w-700 h-350 md:w-500 transition-all duration-200 -translate-x-10 hover:translate-x-0"
+            >
+              <img
+                src="./assets/images/home/h1-banner2.jpg"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="text-white absolute top-14 left-10">
+              <h2 class="font-bold mb-1">FREE SHIPPING</h2>
+              <h2 class="text-6xl font-extrabold mb-3">30%</h2>
+              <h2 class="text-3xl font-extrabold mb-20">Sale Off</h2>
+              <button class="bg-secondary rounded-full py-2 px-8 font-bold">
+                Shop Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-full md:w-450 overflow-hidden relative cursor-pointer rounded-md"
+          >
+            <div
+              class="w-700 h-350 md:w-500 transition-all duration-200 -translate-x-10 hover:translate-x-0"
+            >
+              <img
+                src="./assets/images/home/h1-banner3.jpg"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="text-white absolute top-14 w-full text-center">
+              <h2 class="text-5xl font-bold">Parrot Food</h2>
+              <p class="text-black italic" style="font-family: cursive">
+                Healthy formula
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between my-10 md:flex-row">
+          <div
+            class="w-full mb-6 md:mr-4 md:mb-0 md:w-700 overflow-hidden relative cursor-pointer rounded-md"
+          >
+            <div
+              class="w-750 transition-all duration-200 -translate-x-10 hover:translate-x-0"
+            >
+              <img src="./assets/images/h1-banner4.jpg" class="w-full" />
+            </div>
+            <div class="font-bold text-white absolute top-14 left-10">
+              <h2 class="text-2xl">Dog Supplies</h2>
+              <div class="flex items-center font-bold my-3">
+                <span class="text-7xl mr-2">25</span>
+                <div class="flex flex-col">
+                  <span class="text-xl">%</span>
+                  <span class="text-xl">off</span>
+                </div>
+              </div>
+              <div
+                class="mt-10 bg-no-repeat bg-cover py-1 pl-5 flex flex-col items-start justify-center"
+                style="background-image: url('./assets/images/h1-banner5.png')"
+              >
+                <h2 class="text-primary">Hotline Order</h2>
+                <h2>(877) 834-1434</h2>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full md:w-700 overflow-hidden relative cursor-pointer rounded-md"
+          >
+            <div
+              class="w-750 transition-all duration-200 -translate-x-10 hover:translate-x-0"
+            >
+              <img src="./assets/images/h1-banner6.jpg" class="w-full" />
+            </div>
+            <div class="font-bold text-white absolute top-14 left-10">
+              <h2 class="text-2xl">Dog Supplies</h2>
+              <h2 class="text-5xl my-4">Premium</h2>
+              <h2 class="text-5xl">Cat Food</h2>
+              <h2 class="text-3xl mt-3">
+                Save <span class="text-yellow-400">30%</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 
+        Pet Collection
+       -->
+      <div class="container m-auto px-4 mt-24 relative">
+        <div class="flex flex-col sm:flex-row items-center justify-between mb-10">
+          <div class="relative">
+            <h2 class="text-3xl mb-4 font-bold sm:mb-0">
+              Best Seller Products
+            </h2>
+            <i
+              class="fa-sharp fa-solid fa-paw text-primary text-lg absolute right-100 -top-4 right-2"
+            ></i>
+            <i
+              class="fa-sharp fa-solid fa-paw text-primary text-xl rotate-45 absolute -top-3 -right-4"
+            ></i>
+          </div>
+          <div class="hidden sm:flex gap-4">
+            <div class="product-swiper-button-prev rounded-full border py-2 px-4 hover:bg-secondry hover:text-white"><i class="fa-solid fa-angle-left"></i></div>
+            <div class="product-swiper-button-next rounded-full border py-2 px-4 hover:bg-secondry hover:text-white"><i class="fa-solid fa-angle-right"></i></div>
+          </div>
+        </div>
+        <div class="productSwiper overflow-hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="cursor-pointer mb-5">
+                <div
+                  class="relative border border-dashed transition-all duration-300 rounded-md"
+                >
+                  <img
+                    src="./assets/images/home/product-15-1-350x350.jpg"
+                    class="w-full lg:h-66 max-h-96"
+                  />
+                  <div
+                    class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5"
+                  >
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-regular fa-heart text-lg"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-solid fa-code-compare text-lg"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-solid fa-magnifying-glass-plus text-lg"></i
+                    ></a>
+                  </div>
+                  <div class="absolute bottom-8 w-full text-center">
+                    <button
+                      class="font-bold bg-secondary text-white rounded-full py-2 px-12 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"
+                    >
+                      <i class="fa-solid fa-cart-shopping"></i> Read More
+                    </button>
+                  </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1"
+                      >$169.93</span
+                    >
+                  </div>
+                  <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cursor-pointer mb-5">
+                <div
+                  class="relative border border-dashed transition-all duration-300 rounded-md"
+                >
+                  <img
+                    src="./assets/images/home/product-2-1-350x350.jpg"
+                    class="w-full lg:h-66 max-h-96"
+                  />
+                  <div
+                    class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5"
+                  >
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-regular fa-heart text-lg"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-solid fa-code-compare text-lg"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-solid fa-magnifying-glass-plus text-lg"></i
+                    ></a>
+                  </div>
+                  <div class="absolute bottom-8 w-full text-center">
+                    <button
+                      class="font-bold bg-secondary text-white rounded-full py-2 px-12 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"
+                    >
+                      <i class="fa-solid fa-cart-shopping"></i> Read More
+                    </button>
+                  </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1"
+                      >$169.93</span
+                    >
+                  </div>
+                  <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cursor-pointer mb-5">
+                <div
+                  class="relative border border-dashed transition-all duration-300 rounded-md"
+                >
+                  <img
+                    src="./assets/images/home/product-9-1-350x350.jpg"
+                    class="w-full lg:h-66 max-h-96"
+                  />
+                  <div
+                    class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5"
+                  >
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-regular fa-heart text-lg"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-solid fa-code-compare text-lg"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-solid fa-magnifying-glass-plus text-lg"></i
+                    ></a>
+                  </div>
+                  <div class="absolute bottom-8 w-full text-center">
+                    <button
+                      class="font-bold bg-secondary text-white rounded-full py-2 px-12 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"
+                    >
+                      <i class="fa-solid fa-cart-shopping"></i> Read More
+                    </button>
+                  </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1"
+                      >$169.93</span
+                    >
+                  </div>
+                  <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cursor-pointer mb-5">
+                <div
+                  class="relative border border-dashed transition-all duration-300 rounded-md"
+                >
+                  <img
+                    src="./assets/images/home/product-7-1-350x350.jpg"
+                    class="w-full lg:h-66 max-h-96"
+                  />
+                  <div
+                    class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5"
+                  >
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-regular fa-heart text-lg"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-solid fa-code-compare text-lg"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-solid fa-magnifying-glass-plus text-lg"></i
+                    ></a>
+                  </div>
+                  <div class="absolute bottom-8 w-full text-center">
+                    <button
+                      class="font-bold bg-secondary text-white rounded-full py-2 px-12 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"
+                    >
+                      <i class="fa-solid fa-cart-shopping"></i> Read More
+                    </button>
+                  </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1"
+                      >$169.93</span
+                    >
+                  </div>
+                  <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cursor-pointer mb-5">
+                <div
+                  class="relative border border-dashed transition-all duration-300 rounded-md"
+                >
+                  <img
+                    src="./assets/images/home/product-3-1-350x350.jpg"
+                    class="w-full lg:h-66 max-h-96"
+                  />
+                  <div
+                    class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5"
+                  >
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-regular fa-heart text-lg"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-solid fa-code-compare text-lg"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-solid fa-magnifying-glass-plus text-lg"></i
+                    ></a>
+                  </div>
+                  <div class="absolute bottom-8 w-full text-center">
+                    <button
+                      class="font-bold bg-secondary text-white rounded-full py-2 px-12 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"
+                    >
+                      <i class="fa-solid fa-cart-shopping"></i> Read More
+                    </button>
+                  </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1"
+                      >$169.93</span
+                    >
+                  </div>
+                  <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cursor-pointer mb-5">
+                <div
+                  class="relative border border-dashed transition-all duration-300 rounded-md"
+                >
+                  <img
+                    src="./assets/images/home/product-14-1-350x350.jpg"
+                    class="w-full lg:h-66 max-h-96"
+                  />
+                  <div
+                    class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5"
+                  >
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-regular fa-heart text-lg"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-solid fa-code-compare text-lg"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-solid fa-magnifying-glass-plus text-lg"></i
+                    ></a>
+                  </div>
+                  <div class="absolute bottom-8 w-full text-center">
+                    <button
+                      class="font-bold bg-secondary text-white rounded-full py-2 px-12 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"
+                    >
+                      <i class="fa-solid fa-cart-shopping"></i> Read More
+                    </button>
+                  </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1"
+                      >$169.93</span
+                    >
+                  </div>
+                  <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cursor-pointer mb-5">
+                <div
+                  class="relative border border-dashed transition-all duration-300 rounded-md"
+                >
+                  <img
+                    src="./assets/images/home/product-17-1-350x350.jpg"
+                    class="w-full lg:h-66 max-h-96"
+                  />
+                  <div
+                    class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5"
+                  >
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-regular fa-heart text-lg"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-solid fa-code-compare text-lg"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-solid fa-magnifying-glass-plus text-lg"></i
+                    ></a>
+                  </div>
+                  <div class="absolute bottom-8 w-full text-center">
+                    <button
+                      class="font-bold bg-secondary text-white rounded-full py-2 px-12 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"
+                    >
+                      <i class="fa-solid fa-cart-shopping"></i> Read More
+                    </button>
+                  </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1"
+                      >$169.93</span
+                    >
+                  </div>
+                  <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cursor-pointer mb-5">
+                <div
+                  class="relative border border-dashed transition-all duration-300 rounded-md"
+                >
+                  <img
+                    src="./assets/images/home/product-16-1-350x350.jpg"
+                    class="w-full lg:h-66 max-h-96"
+                  />
+                  <div
+                    class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5"
+                  >
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-regular fa-heart text-lg"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-solid fa-code-compare text-lg"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                      ><i class="fa-solid fa-magnifying-glass-plus text-lg"></i
+                    ></a>
+                  </div>
+                  <div class="absolute bottom-8 w-full text-center">
+                    <button
+                      class="font-bold bg-secondary text-white rounded-full py-2 px-12 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"
+                    >
+                      <i class="fa-solid fa-cart-shopping"></i> Read More
+                    </button>
+                  </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1"
+                      >$169.93</span
+                    >
+                  </div>
+                  <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- 
+        Browse By Categories
+       -->
+      <div class="bg-primary my-10 lg:my-20">
+        <div class="bg-primary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 1920 70"
+            class="text-white bg-primary"
+          >
+            <g fill="currentColor" class="nc-icon-wrapper">
+              <g
+                transform="matrix(.1 0 0 -.1 0 70)"
+                fill="currentColor"
+                stroke="none"
+              >
+                <path
+                  class="elementor-shape-fill"
+                  d="M0 510V319l48 27c26 15 51 31 56 36 6 4 19 8 31 8 11 0 31 7 44 16 27 19 103 14 186-12 120-38 395-61 395-33 0 6-7 9-15 5-8-3-15 0-15 5 0 7 10 9 28 5 15-4 47-9 72-12s90-16 145-28c91-21 180-26 202-13 5 3 63-5 129-19 128-26 281-54 302-54 6 0 12 7 12 15 0 9-10 15-26 15-34 0-188 29-244 46-39 12-41 13-10 10 80-11 167-27 194-36 16-6 47-10 70-10 42-1 145-22 166-35 6-4 48-9 93-11 45-3 102-9 127-14 25-6 104-12 175-15 72-4 141-8 155-10 219-36 548-51 572-27 8 8 3 13-18 18-17 4-29 3-31-3s-14-8-25-5c-21 5-21 6-2 12 15 6 13 9-16 14-32 6-257 28-425 42-38 4-77 10-85 15-9 6 95 7 259 4 151-4 278-8 283-11 7-4 191-5 277-1 19 1 36 7 38 13 4 11-80 10-131-1-10-2-42 0-70 5-28 6-78 12-111 14-50 3-215 19-315 30-71 9-120 19-120 26 0 5 9 6 20 3s20 0 20 5c0 7 22 11 56 11 31-1 51-5 45-9-9-5-8-9 4-14 9-3 21-4 25-1 5 3 43 8 86 11s82 7 86 10 8 1 8-4c0-9 19-12 85-12 174-1 221-3 223-11 2-5 10-5 21 0 9 5 61 6 116 3 55-4 145-6 200-4s116 3 136 3c25 1 46 9 70 30 19 16 43 32 54 35 11 4 33 17 48 30 16 13 38 24 49 24 17 0 124 23 213 46 16 4 17 3 5-5-31-21 3-22 112-3 62 11 127 17 144 15 17-3 76 2 130 10s106 15 114 16c8 0 53 7 100 16 47 8 134 18 194 21s118 10 128 15c12 7 18 6 18-1 0-6 8-9 18-6 37 11 261 28 430 32 97 3 265 8 372 11 277 10 520 9 704 0 116-7 156-6 151 2-4 8 5 10 32 7 149-20 290-28 377-22 56 3 125 2 153-3 29-6 74-13 100-17 26-3 114-28 194-55s152-49 158-49c7 0 19-7 27-15 11-11 35-15 82-14 51 1 61 3 42 10-18 6-12 7 25 4 28-2 118-9 200-15 83-6 173-15 200-21 74-14 166-28 300-43 104-13 122-13 136 0 8 8 23 14 33 14 9 0 28 7 41 16 19 12 28 14 38 5 8-6 16-8 19-5s39 1 79-5c41-6 118-13 172-17 55-3 125-13 158-24 32-10 62-14 64-9 6 9 207 5 224-5 5-4 12-2 15 3s47 9 98 10 102 4 114 7 32 1 43-6c14-7 21-7 21 0 0 6 44 9 123 8 67-1 128 1 135 6 7 4 19 2 27-4 9-8 15-8 15-2 0 11 154 8 190-3 23-7 48 4 32 14-6 3 12 7 39 8 26 1 51-2 54-7 4-6 16-10 28-11 34-1-27-18-88-24-27-3-84-10-126-15-165-22-309-33-414-31-73 1-107-1-100-8 6-5 53-11 105-11 111-2 408 9 431 16 9 2 28 0 43-5 14-6 26-7 26-3s59 8 130 9c72 1 130-2 130-6 0-5-35-12-77-16-43-4-91-9-108-10-63-6-163-15-247-21-54-3-93-11-105-21-10-8-13-12-6-9 6 4 14 2 18-4 3-5-3-10-14-10-12 0-21 5-21 10 0 6-9 10-21 10-11 0-17-5-14-10s0-10-7-11c-7 0-5-4 5-7 19-8 316-6 357 2 14 2 61 9 105 15s91 13 105 16c14 2 86 7 160 10 74 2 151 9 170 15 19 5 66 10 105 10 38 1 88 7 109 15 22 7 71 19 110 25s96 16 126 22 68 12 85 15c16 2 52 8 78 14s51 9 54 6c7-7-47-20-167-41-136-24-140-25-140-38 0-7 14-9 43-4 103 15 168 27 252 45 49 10 93 17 98 14 4-2 14 1 22 7 12 10 18 10 30 0s31-8 97 13c81 25 196 40 513 69 249 23 2601 17 3050-8 125-7 390-32 470-44 78-13 80-13 66 4-15 18-100 32-321 52-283 25-664 33-1925 39-654 3-1210 9-1235 12l-45 7 45 7c71 12 433 9 447-3 9-7 13-7 13 1 0 14 1144 15 1800 1 600-13 1172-43 1126-60-14-5-3-10 39-18 32-7 69-12 82-12s23-4 23-10c0-5-7-10-15-10s-15-4-15-9c0-10 15-16 70-26 58-11 70-16 70-28 0-7 10-14 23-15s70-13 127-26c56-14 107-23 111-20 5 2 41 5 81 5 64 1 128-10 371-61 65-13 77-13 77 5 0 9-9 15-22 15-26 0-170 29-177 36-8 8 44 4 79-7 19-5 69-14 110-19 107-12 141-18 154-29 6-5 56-13 110-16 54-4 109-10 121-15 28-10 122-16 131-8 3 4 16 4 28 0 11-4 48-7 81-6s65-2 70-7c6-4 20-7 30-5 11 2 31-1 45-5s48-11 75-14c88-10 392-18 421-10l29 7-30 12c-16 7-31 9-33 4-2-4-20-7-40-7l-37 2 35 6c49 9 21 24-42 22-28 0-47 3-43 9 3 5-5 7-17 4-37-7-425 33-414 43 5 5 138 4 366-3 277-9 480-10 492-3 25 16 0 19-78 11-55-6-99-5-146 4-36 7-81 12-100 12-89-2-381 36-407 53-14 9-14 10 1 5 10-3 20-1 23 5 9 13 87 8 102-7 8-8 26-9 55-4 68 12 169 19 164 11-3-3 61-7 142-8s160-6 175-12c20-8 26-8 22 0-5 7 23 8 92 4 109-7 258-8 317-1 21 3 48 1 60-4 13-5 37-3 61 6 21 7 41 11 45 9 3-2 24 1 46 6 21 5 92 12 158 14 65 3 126 10 135 14 10 6 24 5 34 0 16-9 17 3 17 171v180H0V510zm6547 124c-3-3-12-4-19-1-8 3-5 6 6 6 11 1 17-2 13-5zm5713-131c0-5-44-9-98-9-71-1-85 0-52 6 63 10 150 11 150 3zm-4597-20c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm8184-39c-3-3-12-4-19-1-8 3-5 6 6 6 11 1 17-2 13-5zm46-1c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm-4353-63c-8-5-24-9-35-9-16 1-16 2 5 9 35 11 48 11 30 0zM1285 340c13-5 14-9 5-9-8 0-24 4-35 9-13 5-14 9-5 9 8 0 24-4 35-9zm9344-23c-10-9-109-17-109-9 0 5 26 10 57 11s55 0 52-2zm5806-17c7-12-2-12-30 0-19 8-19 9 2 9 12 1 25-3 28-9zm84-6c17-4 31-11 31-16 0-6-10-7-22-3-13 3-36 10-53 15-22 6-25 8-9 9 12 1 36-2 53-5zM2270 270c0-11-21-11-65 0-27 7-25 8 18 9 26 0 47-3 47-9zm8093-27c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm-90-10c-7-2-21-2-30 0-10 3-4 5 12 5 17 0 24-2 18-5zm7131-3c-6-6-21-6-39-1-30 9-30 9 10 10 25 1 36-2 29-9zm-7326-7c-10-2-26-2-35 0-10 3-2 5 17 5s27-2 18-5zm-7615-20c-7-2-21-2-30 0-10 3-4 5 12 5 17 0 24-2 18-5zm84-9c-3-3-12-4-19-1-8 3-5 6 6 6 11 1 17-2 13-5zm213-4c0-5-15-9-32-9l-33 1 30 8c17 4 31 8 33 9 1 0 2-3 2-9zm14843-27c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm292-13c-3-5-16-10-28-9-21 0-21 1-2 9 28 12 37 12 30 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M5647 614c-1-1-32-4-68-8-36-3-79-8-95-11s-112-9-213-15c-100-6-204-15-230-20-25-5-66-11-91-14-81-8-124-18-109-26 15-9 318 3 498 20 63 6 281 10 485 9s421-1 481 1c61 2 133 4 162 4 83 1 46 15-67 25-284 26-380 32-558 34-107 1-194 1-195 1z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M12805 375c96-18 97-18 120-16 17 3 17 4-5 11-24 8-24 8 6 9 16 1 34-3 40-8 12-12 752-22 779-11 12 5-39 8-125 8-80 0-257 2-395 4-175 2-93 4 275 8l525 5-645 2c-559 1-636-1-575-12z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M8425 375c21-10 156-21 161-13 3 4-12 8-34 8s-61 2-88 5-44 3-39 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M13835 340c102-11 175-11 150 0-11 5-65 8-120 8l-100-1 70-7z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M14125 340l-30-8 33-1c17 0 32 4 32 9 0 6-1 9-2 9-2-1-16-5-33-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M770 331c0-8 85-22 130-20 20 1 17 4-15 14-46 15-115 19-115 6z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M15748 313c12-2 32-2 45 0 12 2 2 4-23 4s-35-2-22-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M15914 293c8-8 23-11 96-18 54-5 54-5 25 9-30 15-135 22-121 9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M11525 260c-7-12 2-12 30 0 19 8 19 9-2 9-12 1-25-3-28-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M11490 250c-9-6-10-10-3-10 6 0 15 5 18 10 8 12 4 12-15 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10850 241c0-8 79-3 89 5 2 2-17 4-42 4-26 0-47-4-47-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1220 226c0-9 40-13 46-5 3 5-6 9-20 9s-26-2-26-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10770 219c0-5 5-7 10-4 6 3 10 8 10 11 0 2-4 4-10 4-5 0-10-5-10-11z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1864 209c-13-5-3-8 29-8 26-1 47 1 47 3 0 8-58 12-76 5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1328 203c7-3 16-2 19 1 4 3-2 6-13 5-11 0-14-3-6-6z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M9655 190c-3-5 3-10 14-10 12 0 21 5 21 10 0 6-6 10-14 10s-18-4-21-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M11005 189c-64-7-124-33-100-42 19-8 296 30 307 41 9 9-135 10-207 1z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M16360 190c0-5 12-10 28-9 24 0 25 1 7 9-27 12-35 12-35 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M2005 180c3-5 8-10 11-10 2 0 4 5 4 10 0 6-5 10-11 10-5 0-7-4-4-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M16465 170c-3-5-1-10 4-10 6 0 11 5 11 10 0 6-2 10-4 10-3 0-8-4-11-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17005 170c3-5 22-10 41-10 21 0 33 4 29 10-3 6-22 10-41 10-21 0-33-4-29-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1585 150c40-15 223-41 266-38l44 3-37 18c-28 15-65 19-165 21-70 2-119 0-108-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M3105 150c3-5 13-10 21-10s12 5 9 10c-3 6-13 10-21 10s-12-4-9-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10730 140c-23-7-23-8-3-9 12-1 25 4 28 9 3 6 5 10 3 9s-14-5-28-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10780 140c0-11 14-11 50 0 22 7 21 8-12 9-21 1-38-3-38-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M16710 120c0-5 21-12 48-15 26-4 79-13 119-21 84-16 153-18 153-4 0 6-8 10-18 10s-23 5-28 10c-6 6-55 13-110 16-54 2-114 7-131 9-18 2-33 0-33-5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1940 108c0-5 18-8 40-8s40 2 40 4-18 6-40 8-40 0-40-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M18240 116c0-9 30-14 35-6 4 6-3 10-14 10-12 0-21-2-21-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M2035 100c3-5 16-10 28-9 21 0 21 1 2 9-28 12-37 12-30 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10533 90c-50-4-88-11-95-19-11-11 12-13 137-7 164 7 225 14 225 27 0 9-120 8-267-1z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10826 92c-3-5 8-6 25-4 16 2 29 6 29 8 0 8-49 4-54-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10943 73c9-2 23-2 30 0 6 3-1 5-18 5-16 0-22-2-12-5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17086 69c3-5 21-9 41-9 45 0 40 6-9 13-21 3-35 1-32-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17185 60c27-12 43-12 25 0-8 5-22 9-30 9-10 0-8-3 5-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1923 53c9-2 25-2 35 0 9 3 1 5-18 5s-27-2-17-5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1990 52c0-18 282-40 341-27 34 8 34 8 9 17-35 13-350 22-350 10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17063 13c9-2 25-2 35 0 9 3 1 5-18 5s-27-2-17-5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17130 11c0-5 80-9 178-9 122 0 165 2 137 8-53 12-315 12-315 1z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M16958 3c7-3 16-2 19 1 4 3-2 6-13 5-11 0-14-3-6-6z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="container m-auto px-4 py-20 relative">
+          <div class="relative">
+            <div class="flex flex-col sm:flex-row items-center justify-between mb-10">
+              <div class="relative">
+                <h2 class="text-3xl mb-4 font-bold sm:mb-0">
+                  Browse By Categories
+                </h2>
+                <i
+                  class="fa-sharp fa-solid fa-paw text-primary text-lg absolute right-100 -top-4 right-2"
+                ></i>
+                <i
+                  class="fa-sharp fa-solid fa-paw text-primary text-xl rotate-45 absolute -top-3 -right-4"
+                ></i>
+              </div>
+              <div class="hidden sm:flex gap-4">
+                <div class="categori-product-swiper-button-prev rounded-full border py-2 px-4 hover:bg-secondry hover:text-white"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="categori-product-swiper-button-next rounded-full border py-2 px-4 hover:bg-secondry hover:text-white"><i class="fa-solid fa-angle-right"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="categoriSwiper overflow-hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="flex items-center justify-center flex-col gap-4 cursor-pointer">
+                  <img src="./assets/images/home/categories-1.jpg" class="rounded-full border border-dashed hover:border-secondary">
+                  <span class="font-semibold">Food</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex items-center justify-center flex-col gap-4 cursor-pointer">
+                  <img src="./assets/images/home/categories-2.jpg" class="rounded-full border border-dashed hover:border-secondary">
+                  <span class="font-semibold">Food</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex items-center justify-center flex-col gap-4 cursor-pointer">
+                  <img src="./assets/images/home/categories-3.jpg" class="rounded-full border border-dashed hover:border-secondary">
+                  <span class="font-semibold">Food</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex items-center justify-center flex-col gap-4 cursor-pointer">
+                  <img src="./assets/images/home/categories-4.jpg" class="rounded-full border border-dashed hover:border-secondary">
+                  <span class="font-semibold">Food</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex items-center justify-center flex-col gap-4 cursor-pointer">
+                  <img src="./assets/images/home/categories-5.jpg" class="rounded-full border border-dashed hover:border-secondary">
+                  <span class="font-semibold">Food</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex items-center justify-center flex-col gap-4 cursor-pointer">
+                  <img src="./assets/images/home/categories-6.jpg" class="rounded-full border border-dashed hover:border-secondary">
+                  <span class="font-semibold">Food</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex items-center justify-center flex-col gap-4 cursor-pointer">
+                  <img src="./assets/images/home/categories-7.jpg" class="rounded-full border border-dashed hover:border-secondary">
+                  <span class="font-semibold">Food</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex items-center justify-center flex-col gap-4 cursor-pointer">
+                  <img src="./assets/images/home/categories-8.jpg" class="rounded-full border border-dashed hover:border-secondary">
+                  <span class="font-semibold">Food</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex items-center justify-center flex-col gap-4 cursor-pointer">
+                  <img src="./assets/images/home/categories-9.jpg" class="rounded-full border border-dashed hover:border-secondary">
+                  <span class="font-semibold">Food</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex items-center justify-center flex-col gap-4 cursor-pointer">
+                  <img src="./assets/images/home/categories-10.jpg" class="rounded-full border border-dashed hover:border-secondary">
+                  <span class="font-semibold">Food</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-around text-white font-bold mt-20 py-10 px-4 bg-cover bg-center bg-no-repeat sm:py-0 sm:flex-row" style="background-image: url(./assets/images/home/h1-background01.jpg);">
+            <div class="">
+              <h2 class="text-lg">BUY 1 GET 1</h2>
+              <h2 class="text-5xl my-4">Save 50% Off</h2>
+              <h2>Safe and effective products.</h2>
+            </div>
+            <div class="my-5">
+              <img src="./assets/images/home/h1-banner6.png" class="w-full h-full">
+            </div>
+            <div>
+              <h2>Shop for your Pet</h2>
+              <button class="bg-secondary rounded-full py-2 mt-5 w-full">Shop Now <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="rotate-180">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 1920 70"
+            class="text-white bg-primary"
+          >
+            <g fill="currentColor" class="nc-icon-wrapper">
+              <g
+                transform="matrix(.1 0 0 -.1 0 70)"
+                fill="currentColor"
+                stroke="none"
+              >
+                <path
+                  class="elementor-shape-fill"
+                  d="M0 510V319l48 27c26 15 51 31 56 36 6 4 19 8 31 8 11 0 31 7 44 16 27 19 103 14 186-12 120-38 395-61 395-33 0 6-7 9-15 5-8-3-15 0-15 5 0 7 10 9 28 5 15-4 47-9 72-12s90-16 145-28c91-21 180-26 202-13 5 3 63-5 129-19 128-26 281-54 302-54 6 0 12 7 12 15 0 9-10 15-26 15-34 0-188 29-244 46-39 12-41 13-10 10 80-11 167-27 194-36 16-6 47-10 70-10 42-1 145-22 166-35 6-4 48-9 93-11 45-3 102-9 127-14 25-6 104-12 175-15 72-4 141-8 155-10 219-36 548-51 572-27 8 8 3 13-18 18-17 4-29 3-31-3s-14-8-25-5c-21 5-21 6-2 12 15 6 13 9-16 14-32 6-257 28-425 42-38 4-77 10-85 15-9 6 95 7 259 4 151-4 278-8 283-11 7-4 191-5 277-1 19 1 36 7 38 13 4 11-80 10-131-1-10-2-42 0-70 5-28 6-78 12-111 14-50 3-215 19-315 30-71 9-120 19-120 26 0 5 9 6 20 3s20 0 20 5c0 7 22 11 56 11 31-1 51-5 45-9-9-5-8-9 4-14 9-3 21-4 25-1 5 3 43 8 86 11s82 7 86 10 8 1 8-4c0-9 19-12 85-12 174-1 221-3 223-11 2-5 10-5 21 0 9 5 61 6 116 3 55-4 145-6 200-4s116 3 136 3c25 1 46 9 70 30 19 16 43 32 54 35 11 4 33 17 48 30 16 13 38 24 49 24 17 0 124 23 213 46 16 4 17 3 5-5-31-21 3-22 112-3 62 11 127 17 144 15 17-3 76 2 130 10s106 15 114 16c8 0 53 7 100 16 47 8 134 18 194 21s118 10 128 15c12 7 18 6 18-1 0-6 8-9 18-6 37 11 261 28 430 32 97 3 265 8 372 11 277 10 520 9 704 0 116-7 156-6 151 2-4 8 5 10 32 7 149-20 290-28 377-22 56 3 125 2 153-3 29-6 74-13 100-17 26-3 114-28 194-55s152-49 158-49c7 0 19-7 27-15 11-11 35-15 82-14 51 1 61 3 42 10-18 6-12 7 25 4 28-2 118-9 200-15 83-6 173-15 200-21 74-14 166-28 300-43 104-13 122-13 136 0 8 8 23 14 33 14 9 0 28 7 41 16 19 12 28 14 38 5 8-6 16-8 19-5s39 1 79-5c41-6 118-13 172-17 55-3 125-13 158-24 32-10 62-14 64-9 6 9 207 5 224-5 5-4 12-2 15 3s47 9 98 10 102 4 114 7 32 1 43-6c14-7 21-7 21 0 0 6 44 9 123 8 67-1 128 1 135 6 7 4 19 2 27-4 9-8 15-8 15-2 0 11 154 8 190-3 23-7 48 4 32 14-6 3 12 7 39 8 26 1 51-2 54-7 4-6 16-10 28-11 34-1-27-18-88-24-27-3-84-10-126-15-165-22-309-33-414-31-73 1-107-1-100-8 6-5 53-11 105-11 111-2 408 9 431 16 9 2 28 0 43-5 14-6 26-7 26-3s59 8 130 9c72 1 130-2 130-6 0-5-35-12-77-16-43-4-91-9-108-10-63-6-163-15-247-21-54-3-93-11-105-21-10-8-13-12-6-9 6 4 14 2 18-4 3-5-3-10-14-10-12 0-21 5-21 10 0 6-9 10-21 10-11 0-17-5-14-10s0-10-7-11c-7 0-5-4 5-7 19-8 316-6 357 2 14 2 61 9 105 15s91 13 105 16c14 2 86 7 160 10 74 2 151 9 170 15 19 5 66 10 105 10 38 1 88 7 109 15 22 7 71 19 110 25s96 16 126 22 68 12 85 15c16 2 52 8 78 14s51 9 54 6c7-7-47-20-167-41-136-24-140-25-140-38 0-7 14-9 43-4 103 15 168 27 252 45 49 10 93 17 98 14 4-2 14 1 22 7 12 10 18 10 30 0s31-8 97 13c81 25 196 40 513 69 249 23 2601 17 3050-8 125-7 390-32 470-44 78-13 80-13 66 4-15 18-100 32-321 52-283 25-664 33-1925 39-654 3-1210 9-1235 12l-45 7 45 7c71 12 433 9 447-3 9-7 13-7 13 1 0 14 1144 15 1800 1 600-13 1172-43 1126-60-14-5-3-10 39-18 32-7 69-12 82-12s23-4 23-10c0-5-7-10-15-10s-15-4-15-9c0-10 15-16 70-26 58-11 70-16 70-28 0-7 10-14 23-15s70-13 127-26c56-14 107-23 111-20 5 2 41 5 81 5 64 1 128-10 371-61 65-13 77-13 77 5 0 9-9 15-22 15-26 0-170 29-177 36-8 8 44 4 79-7 19-5 69-14 110-19 107-12 141-18 154-29 6-5 56-13 110-16 54-4 109-10 121-15 28-10 122-16 131-8 3 4 16 4 28 0 11-4 48-7 81-6s65-2 70-7c6-4 20-7 30-5 11 2 31-1 45-5s48-11 75-14c88-10 392-18 421-10l29 7-30 12c-16 7-31 9-33 4-2-4-20-7-40-7l-37 2 35 6c49 9 21 24-42 22-28 0-47 3-43 9 3 5-5 7-17 4-37-7-425 33-414 43 5 5 138 4 366-3 277-9 480-10 492-3 25 16 0 19-78 11-55-6-99-5-146 4-36 7-81 12-100 12-89-2-381 36-407 53-14 9-14 10 1 5 10-3 20-1 23 5 9 13 87 8 102-7 8-8 26-9 55-4 68 12 169 19 164 11-3-3 61-7 142-8s160-6 175-12c20-8 26-8 22 0-5 7 23 8 92 4 109-7 258-8 317-1 21 3 48 1 60-4 13-5 37-3 61 6 21 7 41 11 45 9 3-2 24 1 46 6 21 5 92 12 158 14 65 3 126 10 135 14 10 6 24 5 34 0 16-9 17 3 17 171v180H0V510zm6547 124c-3-3-12-4-19-1-8 3-5 6 6 6 11 1 17-2 13-5zm5713-131c0-5-44-9-98-9-71-1-85 0-52 6 63 10 150 11 150 3zm-4597-20c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm8184-39c-3-3-12-4-19-1-8 3-5 6 6 6 11 1 17-2 13-5zm46-1c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm-4353-63c-8-5-24-9-35-9-16 1-16 2 5 9 35 11 48 11 30 0zM1285 340c13-5 14-9 5-9-8 0-24 4-35 9-13 5-14 9-5 9 8 0 24-4 35-9zm9344-23c-10-9-109-17-109-9 0 5 26 10 57 11s55 0 52-2zm5806-17c7-12-2-12-30 0-19 8-19 9 2 9 12 1 25-3 28-9zm84-6c17-4 31-11 31-16 0-6-10-7-22-3-13 3-36 10-53 15-22 6-25 8-9 9 12 1 36-2 53-5zM2270 270c0-11-21-11-65 0-27 7-25 8 18 9 26 0 47-3 47-9zm8093-27c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm-90-10c-7-2-21-2-30 0-10 3-4 5 12 5 17 0 24-2 18-5zm7131-3c-6-6-21-6-39-1-30 9-30 9 10 10 25 1 36-2 29-9zm-7326-7c-10-2-26-2-35 0-10 3-2 5 17 5s27-2 18-5zm-7615-20c-7-2-21-2-30 0-10 3-4 5 12 5 17 0 24-2 18-5zm84-9c-3-3-12-4-19-1-8 3-5 6 6 6 11 1 17-2 13-5zm213-4c0-5-15-9-32-9l-33 1 30 8c17 4 31 8 33 9 1 0 2-3 2-9zm14843-27c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm292-13c-3-5-16-10-28-9-21 0-21 1-2 9 28 12 37 12 30 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M5647 614c-1-1-32-4-68-8-36-3-79-8-95-11s-112-9-213-15c-100-6-204-15-230-20-25-5-66-11-91-14-81-8-124-18-109-26 15-9 318 3 498 20 63 6 281 10 485 9s421-1 481 1c61 2 133 4 162 4 83 1 46 15-67 25-284 26-380 32-558 34-107 1-194 1-195 1z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M12805 375c96-18 97-18 120-16 17 3 17 4-5 11-24 8-24 8 6 9 16 1 34-3 40-8 12-12 752-22 779-11 12 5-39 8-125 8-80 0-257 2-395 4-175 2-93 4 275 8l525 5-645 2c-559 1-636-1-575-12z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M8425 375c21-10 156-21 161-13 3 4-12 8-34 8s-61 2-88 5-44 3-39 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M13835 340c102-11 175-11 150 0-11 5-65 8-120 8l-100-1 70-7z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M14125 340l-30-8 33-1c17 0 32 4 32 9 0 6-1 9-2 9-2-1-16-5-33-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M770 331c0-8 85-22 130-20 20 1 17 4-15 14-46 15-115 19-115 6z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M15748 313c12-2 32-2 45 0 12 2 2 4-23 4s-35-2-22-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M15914 293c8-8 23-11 96-18 54-5 54-5 25 9-30 15-135 22-121 9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M11525 260c-7-12 2-12 30 0 19 8 19 9-2 9-12 1-25-3-28-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M11490 250c-9-6-10-10-3-10 6 0 15 5 18 10 8 12 4 12-15 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10850 241c0-8 79-3 89 5 2 2-17 4-42 4-26 0-47-4-47-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1220 226c0-9 40-13 46-5 3 5-6 9-20 9s-26-2-26-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10770 219c0-5 5-7 10-4 6 3 10 8 10 11 0 2-4 4-10 4-5 0-10-5-10-11z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1864 209c-13-5-3-8 29-8 26-1 47 1 47 3 0 8-58 12-76 5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1328 203c7-3 16-2 19 1 4 3-2 6-13 5-11 0-14-3-6-6z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M9655 190c-3-5 3-10 14-10 12 0 21 5 21 10 0 6-6 10-14 10s-18-4-21-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M11005 189c-64-7-124-33-100-42 19-8 296 30 307 41 9 9-135 10-207 1z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M16360 190c0-5 12-10 28-9 24 0 25 1 7 9-27 12-35 12-35 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M2005 180c3-5 8-10 11-10 2 0 4 5 4 10 0 6-5 10-11 10-5 0-7-4-4-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M16465 170c-3-5-1-10 4-10 6 0 11 5 11 10 0 6-2 10-4 10-3 0-8-4-11-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17005 170c3-5 22-10 41-10 21 0 33 4 29 10-3 6-22 10-41 10-21 0-33-4-29-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1585 150c40-15 223-41 266-38l44 3-37 18c-28 15-65 19-165 21-70 2-119 0-108-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M3105 150c3-5 13-10 21-10s12 5 9 10c-3 6-13 10-21 10s-12-4-9-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10730 140c-23-7-23-8-3-9 12-1 25 4 28 9 3 6 5 10 3 9s-14-5-28-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10780 140c0-11 14-11 50 0 22 7 21 8-12 9-21 1-38-3-38-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M16710 120c0-5 21-12 48-15 26-4 79-13 119-21 84-16 153-18 153-4 0 6-8 10-18 10s-23 5-28 10c-6 6-55 13-110 16-54 2-114 7-131 9-18 2-33 0-33-5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1940 108c0-5 18-8 40-8s40 2 40 4-18 6-40 8-40 0-40-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M18240 116c0-9 30-14 35-6 4 6-3 10-14 10-12 0-21-2-21-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M2035 100c3-5 16-10 28-9 21 0 21 1 2 9-28 12-37 12-30 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10533 90c-50-4-88-11-95-19-11-11 12-13 137-7 164 7 225 14 225 27 0 9-120 8-267-1z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10826 92c-3-5 8-6 25-4 16 2 29 6 29 8 0 8-49 4-54-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10943 73c9-2 23-2 30 0 6 3-1 5-18 5-16 0-22-2-12-5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17086 69c3-5 21-9 41-9 45 0 40 6-9 13-21 3-35 1-32-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17185 60c27-12 43-12 25 0-8 5-22 9-30 9-10 0-8-3 5-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1923 53c9-2 25-2 35 0 9 3 1 5-18 5s-27-2-17-5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1990 52c0-18 282-40 341-27 34 8 34 8 9 17-35 13-350 22-350 10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17063 13c9-2 25-2 35 0 9 3 1 5-18 5s-27-2-17-5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17130 11c0-5 80-9 178-9 122 0 165 2 137 8-53 12-315 12-315 1z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M16958 3c7-3 16-2 19 1 4 3-2 6-13 5-11 0-14-3-6-6z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- 
+        Best Product
+        -->
+      <div class="container m-auto px-4">
+        <div
+          class="flex flex-col sm:flex-row items-center justify-between mb-10"
+        >
+          <div class="relative">
+            <h2 class="text-3xl mb-4 font-bold sm:mb-0">
+              Best Seller Products
+            </h2>
+            <i
+              class="fa-sharp fa-solid fa-paw text-primary text-lg absolute right-100 -top-4 right-2"
+            ></i>
+            <i
+              class="fa-sharp fa-solid fa-paw text-primary text-xl rotate-45 absolute -top-3 -right-4"
+            ></i>
+          </div>
+          <a href="./assets/pages/shop.html" class="text-sm font-semibold"
+            >View All Products
+            <i
+              class="fa-solid fa-angle-right border rounded-full p-1 px-2 ml-3"
+            ></i
+          ></a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+          <div class="cursor-pointer mb-5">
+            <div
+              class="relative border border-dashed transition-all duration-300 rounded-md"
+            >
+              <img
+                src="./assets/images/home/product-15-1-350x350.jpg"
+                class="w-full lg:h-66 max-h-96"
+              />
+              <div
+                class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5"
+              >
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-regular fa-heart text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-code-compare text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-magnifying-glass-plus text-lg"></i
+                ></a>
+              </div>
+              <div class="absolute bottom-8 w-full text-center">
+                <button
+                  class="font-bold bg-secondary text-white rounded-full py-2 px-12 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i> Read More
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+              <div>
+                <span class="font-bold text-secondary text-lg mr-1"
+                  >$169.93</span
+                >
+              </div>
+              <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+              <div>
+                <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-regular fa-star text-xs"></i>
+                <span class="text-lighter text-xs">(5 reviews)</span>
+              </div>
+            </div>
+          </div>
+          <div class="cursor-pointer mb-5">
+            <div
+              class="relative border border-dashed transition-all duration-300 rounded-md"
+            >
+              <img
+                src="./assets/images/home/product-9-1-350x350.jpg"
+                class="w-full lg:h-66 max-h-96"
+              />
+              <div
+                class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5"
+              >
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-regular fa-heart text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-code-compare text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-magnifying-glass-plus text-lg"></i
+                ></a>
+              </div>
+              <div class="absolute bottom-8 w-full text-center">
+                <button
+                  class="font-bold bg-secondary text-white rounded-full py-2 px-12 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i> Read More
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+              <div>
+                <span class="font-bold text-secondary text-lg mr-1"
+                  >$66.17</span
+                >
+              </div>
+              <a href="#" class="hover:text-primary">Fantastic Marble Shoes</a>
+              <div>
+                <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-regular fa-star text-xs"></i>
+                <span class="text-lighter text-xs">(5 reviews)</span>
+              </div>
+            </div>
+          </div>
+          <div class="cursor-pointer mb-5">
+            <div
+              class="relative border border-dashed transition-all duration-300 rounded-md"
+            >
+              <img
+                src="./assets/images/home/product-13-1-350x350.jpg"
+                class="w-full lg:h-66 max-h-96"
+              />
+              <div
+                class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5"
+              >
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-regular fa-heart text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-code-compare text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-magnifying-glass-plus text-lg"></i
+                ></a>
+              </div>
+              <div class="absolute bottom-8 w-full text-center">
+                <button
+                  class="font-bold bg-secondary text-white rounded-full py-2 px-12 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i> Read More
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+              <div>
+                <span class="font-bold text-secondary text-lg mr-1"
+                  >$899.41</span
+                >
+              </div>
+              <a href="#" class="hover:text-primary">Rustic Marble Car</a>
+              <div>
+                <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-regular fa-star text-xs"></i>
+                <span class="text-lighter text-xs">(5 reviews)</span>
+              </div>
+            </div>
+          </div>
+          <div class="cursor-pointer mb-5">
+            <div
+              class="relative border border-dashed transition-all duration-300 rounded-md"
+            >
+              <img
+                src="./assets/images/home/product-6-1-350x350.jpg"
+                class="w-full lg:h-66 max-h-96"
+              />
+              <div
+                class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5"
+              >
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-regular fa-heart text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-code-compare text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-magnifying-glass-plus text-lg"></i
+                ></a>
+              </div>
+              <div class="absolute bottom-8 w-full text-center">
+                <button
+                  class="font-bold bg-secondary text-white rounded-full py-2 px-12 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i> Read More
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+              <div>
+                <span class="font-bold text-secondary text-lg mr-1"
+                  >$262.45</span
+                >
+              </div>
+              <a href="#" class="hover:text-primary">Small Bronze Chair</a>
+              <div>
+                <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-regular fa-star text-xs"></i>
+                <span class="text-lighter text-xs">(5 reviews)</span>
+              </div>
+            </div>
+          </div>
+          <div class="cursor-pointer mb-5">
+            <div
+              class="relative border border-dashed transition-all duration-300 rounded-md"
+            >
+              <img
+                src="./assets/images/home/product-3-1-350x350.jpg"
+                class="w-full lg:h-66 max-h-96"
+              />
+              <div
+                class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5"
+              >
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-regular fa-heart text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-code-compare text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-magnifying-glass-plus text-lg"></i
+                ></a>
+              </div>
+              <div class="absolute bottom-8 w-full text-center">
+                <button
+                  class="font-bold bg-secondary text-white rounded-full py-2 px-12 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i> Read More
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+              <div>
+                <span class="font-bold text-secondary text-lg mr-1"
+                  >$60.40 – $98.32</span
+                >
+              </div>
+              <a href="#" class="hover:text-primary"
+                >Lightweight Aluminum Clock</a
+              >
+              <div>
+                <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-regular fa-star text-xs"></i>
+                <span class="text-lighter text-xs">(5 reviews)</span>
+              </div>
+            </div>
+          </div>
+          <div class="cursor-pointer mb-5">
+            <div
+              class="relative border border-dashed transition-all duration-300 rounded-md"
+            >
+              <img
+                src="./assets/images/home/product-14-1-350x350.jpg"
+                class="w-full lg:h-66 max-h-96"
+              />
+              <div
+                class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5"
+              >
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-regular fa-heart text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-code-compare text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-magnifying-glass-plus text-lg"></i
+                ></a>
+              </div>
+              <div class="absolute bottom-8 w-full text-center">
+                <button
+                  class="font-bold bg-secondary text-white rounded-full py-2 px-12 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i> Read More
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+              <div>
+                <span class="font-bold text-secondary text-lg mr-1"
+                  >$426.03</span
+                >
+              </div>
+              <a href="#" class="hover:text-primary"
+                >Intelligent Wooden Shirt</a
+              >
+              <div>
+                <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-regular fa-star text-xs"></i>
+                <span class="text-lighter text-xs">(5 reviews)</span>
+              </div>
+            </div>
+          </div>
+          <div class="cursor-pointer mb-5">
+            <div
+              class="relative border border-dashed transition-all duration-300 rounded-md"
+            >
+              <img
+                src="./assets/images/home/product-19-1-350x350.jpg"
+                class="w-full lg:h-66 max-h-96"
+              />
+              <div
+                class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5"
+              >
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-regular fa-heart text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-code-compare text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-magnifying-glass-plus text-lg"></i
+                ></a>
+              </div>
+              <div class="absolute bottom-8 w-full text-center">
+                <button
+                  class="font-bold bg-secondary text-white rounded-full py-2 px-12 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i> Read More
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+              <div>
+                <span class="font-bold text-secondary text-lg mr-1"
+                  >$611.82</span
+                >
+              </div>
+              <a href="#" class="hover:text-primary">Ergonomic Paper Clock</a>
+              <div>
+                <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-regular fa-star text-xs"></i>
+                <span class="text-lighter text-xs">(5 reviews)</span>
+              </div>
+            </div>
+          </div>
+          <div class="cursor-pointer mb-5">
+            <div
+              class="relative border border-dashed transition-all duration-300 rounded-md"
+            >
+              <img
+                src="./assets/images/home/product-4-1-350x350.jpg"
+                class="w-full lg:h-66 max-h-96"
+              />
+              <div
+                class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5"
+              >
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-regular fa-heart text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-code-compare text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-magnifying-glass-plus text-lg"></i
+                ></a>
+              </div>
+              <div class="absolute bottom-8 w-full text-center">
+                <button
+                  class="font-bold bg-secondary text-white rounded-full py-2 px-12 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i> Read More
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+              <div>
+                <span class="font-bold text-secondary text-lg mr-1"
+                  >$179.50</span
+                >
+              </div>
+              <a href="#" class="hover:text-primary"
+                >Aerodynamic Bronze Watch</a
+              >
+              <div>
+                <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-regular fa-star text-xs"></i>
+                <span class="text-lighter text-xs">(5 reviews)</span>
+              </div>
+            </div>
+          </div>
+          <div class="cursor-pointer mb-5">
+            <div
+              class="relative border border-dashed transition-all duration-300 rounded-md"
+            >
+              <img
+                src="./assets/images/home/product-2-1-350x350.jpg"
+                class="w-full lg:h-66 max-h-96"
+              />
+              <div
+                class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5"
+              >
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-regular fa-heart text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-code-compare text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-magnifying-glass-plus text-lg"></i
+                ></a>
+              </div>
+              <div class="absolute bottom-8 w-full text-center">
+                <button
+                  class="font-bold bg-secondary text-white rounded-full py-2 px-12 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i> Read More
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+              <div>
+                <span class="font-bold text-secondary text-lg mr-1"
+                  >$857.64</span
+                >
+              </div>
+              <a href="#" class="hover:text-primary">Practical Linen Knife</a>
+              <div>
+                <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-regular fa-star text-xs"></i>
+                <span class="text-lighter text-xs">(5 reviews)</span>
+              </div>
+            </div>
+          </div>
+          <div class="cursor-pointer mb-5">
+            <div
+              class="relative border border-dashed transition-all duration-300 rounded-md"
+            >
+              <img
+                src="./assets/images/home/product-7-1-350x350.jpg"
+                class="w-full lg:h-66 max-h-96"
+              />
+              <div
+                class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5"
+              >
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-regular fa-heart text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-code-compare text-lg"></i
+                ></a>
+                <a
+                  href="#"
+                  class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"
+                  ><i class="fa-solid fa-magnifying-glass-plus text-lg"></i
+                ></a>
+              </div>
+              <div class="absolute bottom-8 w-full text-center">
+                <button
+                  class="font-bold bg-secondary text-white rounded-full py-2 px-12 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i> Read More
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+              <div>
+                <span class="font-bold text-secondary text-lg mr-1"
+                  >$169.93</span
+                >
+              </div>
+              <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+              <div>
+                <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                ><i class="fa-regular fa-star text-xs"></i>
+                <span class="text-lighter text-xs">(5 reviews)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 
+          From Blog
+         -->
+      <div class="bg-primary px-4 my-10 lg:my-20">
+        <div class="bg-primary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 1920 70"
+            class="text-white bg-primary"
+          >
+            <g fill="currentColor" class="nc-icon-wrapper">
+              <g
+                transform="matrix(.1 0 0 -.1 0 70)"
+                fill="currentColor"
+                stroke="none"
+              >
+                <path
+                  class="elementor-shape-fill"
+                  d="M0 510V319l48 27c26 15 51 31 56 36 6 4 19 8 31 8 11 0 31 7 44 16 27 19 103 14 186-12 120-38 395-61 395-33 0 6-7 9-15 5-8-3-15 0-15 5 0 7 10 9 28 5 15-4 47-9 72-12s90-16 145-28c91-21 180-26 202-13 5 3 63-5 129-19 128-26 281-54 302-54 6 0 12 7 12 15 0 9-10 15-26 15-34 0-188 29-244 46-39 12-41 13-10 10 80-11 167-27 194-36 16-6 47-10 70-10 42-1 145-22 166-35 6-4 48-9 93-11 45-3 102-9 127-14 25-6 104-12 175-15 72-4 141-8 155-10 219-36 548-51 572-27 8 8 3 13-18 18-17 4-29 3-31-3s-14-8-25-5c-21 5-21 6-2 12 15 6 13 9-16 14-32 6-257 28-425 42-38 4-77 10-85 15-9 6 95 7 259 4 151-4 278-8 283-11 7-4 191-5 277-1 19 1 36 7 38 13 4 11-80 10-131-1-10-2-42 0-70 5-28 6-78 12-111 14-50 3-215 19-315 30-71 9-120 19-120 26 0 5 9 6 20 3s20 0 20 5c0 7 22 11 56 11 31-1 51-5 45-9-9-5-8-9 4-14 9-3 21-4 25-1 5 3 43 8 86 11s82 7 86 10 8 1 8-4c0-9 19-12 85-12 174-1 221-3 223-11 2-5 10-5 21 0 9 5 61 6 116 3 55-4 145-6 200-4s116 3 136 3c25 1 46 9 70 30 19 16 43 32 54 35 11 4 33 17 48 30 16 13 38 24 49 24 17 0 124 23 213 46 16 4 17 3 5-5-31-21 3-22 112-3 62 11 127 17 144 15 17-3 76 2 130 10s106 15 114 16c8 0 53 7 100 16 47 8 134 18 194 21s118 10 128 15c12 7 18 6 18-1 0-6 8-9 18-6 37 11 261 28 430 32 97 3 265 8 372 11 277 10 520 9 704 0 116-7 156-6 151 2-4 8 5 10 32 7 149-20 290-28 377-22 56 3 125 2 153-3 29-6 74-13 100-17 26-3 114-28 194-55s152-49 158-49c7 0 19-7 27-15 11-11 35-15 82-14 51 1 61 3 42 10-18 6-12 7 25 4 28-2 118-9 200-15 83-6 173-15 200-21 74-14 166-28 300-43 104-13 122-13 136 0 8 8 23 14 33 14 9 0 28 7 41 16 19 12 28 14 38 5 8-6 16-8 19-5s39 1 79-5c41-6 118-13 172-17 55-3 125-13 158-24 32-10 62-14 64-9 6 9 207 5 224-5 5-4 12-2 15 3s47 9 98 10 102 4 114 7 32 1 43-6c14-7 21-7 21 0 0 6 44 9 123 8 67-1 128 1 135 6 7 4 19 2 27-4 9-8 15-8 15-2 0 11 154 8 190-3 23-7 48 4 32 14-6 3 12 7 39 8 26 1 51-2 54-7 4-6 16-10 28-11 34-1-27-18-88-24-27-3-84-10-126-15-165-22-309-33-414-31-73 1-107-1-100-8 6-5 53-11 105-11 111-2 408 9 431 16 9 2 28 0 43-5 14-6 26-7 26-3s59 8 130 9c72 1 130-2 130-6 0-5-35-12-77-16-43-4-91-9-108-10-63-6-163-15-247-21-54-3-93-11-105-21-10-8-13-12-6-9 6 4 14 2 18-4 3-5-3-10-14-10-12 0-21 5-21 10 0 6-9 10-21 10-11 0-17-5-14-10s0-10-7-11c-7 0-5-4 5-7 19-8 316-6 357 2 14 2 61 9 105 15s91 13 105 16c14 2 86 7 160 10 74 2 151 9 170 15 19 5 66 10 105 10 38 1 88 7 109 15 22 7 71 19 110 25s96 16 126 22 68 12 85 15c16 2 52 8 78 14s51 9 54 6c7-7-47-20-167-41-136-24-140-25-140-38 0-7 14-9 43-4 103 15 168 27 252 45 49 10 93 17 98 14 4-2 14 1 22 7 12 10 18 10 30 0s31-8 97 13c81 25 196 40 513 69 249 23 2601 17 3050-8 125-7 390-32 470-44 78-13 80-13 66 4-15 18-100 32-321 52-283 25-664 33-1925 39-654 3-1210 9-1235 12l-45 7 45 7c71 12 433 9 447-3 9-7 13-7 13 1 0 14 1144 15 1800 1 600-13 1172-43 1126-60-14-5-3-10 39-18 32-7 69-12 82-12s23-4 23-10c0-5-7-10-15-10s-15-4-15-9c0-10 15-16 70-26 58-11 70-16 70-28 0-7 10-14 23-15s70-13 127-26c56-14 107-23 111-20 5 2 41 5 81 5 64 1 128-10 371-61 65-13 77-13 77 5 0 9-9 15-22 15-26 0-170 29-177 36-8 8 44 4 79-7 19-5 69-14 110-19 107-12 141-18 154-29 6-5 56-13 110-16 54-4 109-10 121-15 28-10 122-16 131-8 3 4 16 4 28 0 11-4 48-7 81-6s65-2 70-7c6-4 20-7 30-5 11 2 31-1 45-5s48-11 75-14c88-10 392-18 421-10l29 7-30 12c-16 7-31 9-33 4-2-4-20-7-40-7l-37 2 35 6c49 9 21 24-42 22-28 0-47 3-43 9 3 5-5 7-17 4-37-7-425 33-414 43 5 5 138 4 366-3 277-9 480-10 492-3 25 16 0 19-78 11-55-6-99-5-146 4-36 7-81 12-100 12-89-2-381 36-407 53-14 9-14 10 1 5 10-3 20-1 23 5 9 13 87 8 102-7 8-8 26-9 55-4 68 12 169 19 164 11-3-3 61-7 142-8s160-6 175-12c20-8 26-8 22 0-5 7 23 8 92 4 109-7 258-8 317-1 21 3 48 1 60-4 13-5 37-3 61 6 21 7 41 11 45 9 3-2 24 1 46 6 21 5 92 12 158 14 65 3 126 10 135 14 10 6 24 5 34 0 16-9 17 3 17 171v180H0V510zm6547 124c-3-3-12-4-19-1-8 3-5 6 6 6 11 1 17-2 13-5zm5713-131c0-5-44-9-98-9-71-1-85 0-52 6 63 10 150 11 150 3zm-4597-20c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm8184-39c-3-3-12-4-19-1-8 3-5 6 6 6 11 1 17-2 13-5zm46-1c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm-4353-63c-8-5-24-9-35-9-16 1-16 2 5 9 35 11 48 11 30 0zM1285 340c13-5 14-9 5-9-8 0-24 4-35 9-13 5-14 9-5 9 8 0 24-4 35-9zm9344-23c-10-9-109-17-109-9 0 5 26 10 57 11s55 0 52-2zm5806-17c7-12-2-12-30 0-19 8-19 9 2 9 12 1 25-3 28-9zm84-6c17-4 31-11 31-16 0-6-10-7-22-3-13 3-36 10-53 15-22 6-25 8-9 9 12 1 36-2 53-5zM2270 270c0-11-21-11-65 0-27 7-25 8 18 9 26 0 47-3 47-9zm8093-27c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm-90-10c-7-2-21-2-30 0-10 3-4 5 12 5 17 0 24-2 18-5zm7131-3c-6-6-21-6-39-1-30 9-30 9 10 10 25 1 36-2 29-9zm-7326-7c-10-2-26-2-35 0-10 3-2 5 17 5s27-2 18-5zm-7615-20c-7-2-21-2-30 0-10 3-4 5 12 5 17 0 24-2 18-5zm84-9c-3-3-12-4-19-1-8 3-5 6 6 6 11 1 17-2 13-5zm213-4c0-5-15-9-32-9l-33 1 30 8c17 4 31 8 33 9 1 0 2-3 2-9zm14843-27c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm292-13c-3-5-16-10-28-9-21 0-21 1-2 9 28 12 37 12 30 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M5647 614c-1-1-32-4-68-8-36-3-79-8-95-11s-112-9-213-15c-100-6-204-15-230-20-25-5-66-11-91-14-81-8-124-18-109-26 15-9 318 3 498 20 63 6 281 10 485 9s421-1 481 1c61 2 133 4 162 4 83 1 46 15-67 25-284 26-380 32-558 34-107 1-194 1-195 1z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M12805 375c96-18 97-18 120-16 17 3 17 4-5 11-24 8-24 8 6 9 16 1 34-3 40-8 12-12 752-22 779-11 12 5-39 8-125 8-80 0-257 2-395 4-175 2-93 4 275 8l525 5-645 2c-559 1-636-1-575-12z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M8425 375c21-10 156-21 161-13 3 4-12 8-34 8s-61 2-88 5-44 3-39 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M13835 340c102-11 175-11 150 0-11 5-65 8-120 8l-100-1 70-7z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M14125 340l-30-8 33-1c17 0 32 4 32 9 0 6-1 9-2 9-2-1-16-5-33-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M770 331c0-8 85-22 130-20 20 1 17 4-15 14-46 15-115 19-115 6z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M15748 313c12-2 32-2 45 0 12 2 2 4-23 4s-35-2-22-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M15914 293c8-8 23-11 96-18 54-5 54-5 25 9-30 15-135 22-121 9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M11525 260c-7-12 2-12 30 0 19 8 19 9-2 9-12 1-25-3-28-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M11490 250c-9-6-10-10-3-10 6 0 15 5 18 10 8 12 4 12-15 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10850 241c0-8 79-3 89 5 2 2-17 4-42 4-26 0-47-4-47-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1220 226c0-9 40-13 46-5 3 5-6 9-20 9s-26-2-26-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10770 219c0-5 5-7 10-4 6 3 10 8 10 11 0 2-4 4-10 4-5 0-10-5-10-11z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1864 209c-13-5-3-8 29-8 26-1 47 1 47 3 0 8-58 12-76 5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1328 203c7-3 16-2 19 1 4 3-2 6-13 5-11 0-14-3-6-6z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M9655 190c-3-5 3-10 14-10 12 0 21 5 21 10 0 6-6 10-14 10s-18-4-21-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M11005 189c-64-7-124-33-100-42 19-8 296 30 307 41 9 9-135 10-207 1z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M16360 190c0-5 12-10 28-9 24 0 25 1 7 9-27 12-35 12-35 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M2005 180c3-5 8-10 11-10 2 0 4 5 4 10 0 6-5 10-11 10-5 0-7-4-4-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M16465 170c-3-5-1-10 4-10 6 0 11 5 11 10 0 6-2 10-4 10-3 0-8-4-11-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17005 170c3-5 22-10 41-10 21 0 33 4 29 10-3 6-22 10-41 10-21 0-33-4-29-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1585 150c40-15 223-41 266-38l44 3-37 18c-28 15-65 19-165 21-70 2-119 0-108-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M3105 150c3-5 13-10 21-10s12 5 9 10c-3 6-13 10-21 10s-12-4-9-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10730 140c-23-7-23-8-3-9 12-1 25 4 28 9 3 6 5 10 3 9s-14-5-28-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10780 140c0-11 14-11 50 0 22 7 21 8-12 9-21 1-38-3-38-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M16710 120c0-5 21-12 48-15 26-4 79-13 119-21 84-16 153-18 153-4 0 6-8 10-18 10s-23 5-28 10c-6 6-55 13-110 16-54 2-114 7-131 9-18 2-33 0-33-5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1940 108c0-5 18-8 40-8s40 2 40 4-18 6-40 8-40 0-40-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M18240 116c0-9 30-14 35-6 4 6-3 10-14 10-12 0-21-2-21-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M2035 100c3-5 16-10 28-9 21 0 21 1 2 9-28 12-37 12-30 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10533 90c-50-4-88-11-95-19-11-11 12-13 137-7 164 7 225 14 225 27 0 9-120 8-267-1z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10826 92c-3-5 8-6 25-4 16 2 29 6 29 8 0 8-49 4-54-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10943 73c9-2 23-2 30 0 6 3-1 5-18 5-16 0-22-2-12-5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17086 69c3-5 21-9 41-9 45 0 40 6-9 13-21 3-35 1-32-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17185 60c27-12 43-12 25 0-8 5-22 9-30 9-10 0-8-3 5-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1923 53c9-2 25-2 35 0 9 3 1 5-18 5s-27-2-17-5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1990 52c0-18 282-40 341-27 34 8 34 8 9 17-35 13-350 22-350 10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17063 13c9-2 25-2 35 0 9 3 1 5-18 5s-27-2-17-5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17130 11c0-5 80-9 178-9 122 0 165 2 137 8-53 12-315 12-315 1z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M16958 3c7-3 16-2 19 1 4 3-2 6-13 5-11 0-14-3-6-6z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="container m-auto py-12">
+          <div
+            class="flex flex-col sm:flex-row items-center justify-between mb-10"
+          >
+            <div class="relative">
+              <h2 class="text-3xl mb-4 font-bold sm:mb-0">Latest From Blog</h2>
+              <i
+                class="fa-sharp fa-solid fa-paw text-primary text-lg absolute right-100 -top-4 right-2"
+              ></i>
+              <i
+                class="fa-sharp fa-solid fa-paw text-primary text-xl rotate-45 absolute -top-3 -right-4"
+              ></i>
+            </div>
+            <a href="./assets/pages/blog.html" class="text-sm font-semibold"
+              >View All Products
+              <i
+                class="fa-solid fa-angle-right border rounded-full p-1 px-2 ml-3"
+              ></i
+            ></a>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-8"
+          >
+            <div class="mb-10">
+              <div class="relative overflow-hidden rounded-md">
+                <a
+                  href="#"
+                  class="absolute left-4 top-4 bg-purpel text-white font-semibold text-sm py-1 px-2 rounded-t-md rounded-b-sm transition-all duration-100 z-10 hover:bg-secondry hover:skew-x-12"
+                  >Lifestyles</a
+                >
+                <img
+                  src="./assets/images/home/blog-1-768x524.jpg"
+                  class="transition-all duration-200 hover:scale-105 cursor-pointer"
+                />
+              </div>
+              <div class="flex text-xs my-5">
+                <p class="mr-4">
+                  <i class="fa-solid fa-user text-primary mr-2"></i>By
+                  <a href="#" class="text-black font-semibold">Admin</a>
+                </p>
+                <p>
+                  <i class="fa-solid fa-calendar-days text-primary mr-2"></i
+                  ><a href="#">June 3, 2022</a>
+                </p>
+              </div>
+              <div class="text-color">
+                <a href="#" class="text-xl font-bold text-black"
+                  >How To Choose The Right Bully Stick For Your Dog</a
+                >
+                <p class="text-sm mt-4 mb-8 leading-7">
+                  Below is an excerpt of porch.com’s article “Moving With Pets?
+                  We Have the Experts’ Advice to Do It Properly”. For…
+                </p>
+                <button
+                  class="bg-purpel text-white rounded-full py-3 px-5 flex items-center hover:bg-secondry"
+                >
+                  Read More
+                  <i
+                    class="fa-solid fa-angle-right clear-left text-secondary bg-white rounded-full w-5 h-5 ml-3 flex items-center justify-center"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <div class="mb-10">
+              <div class="relative overflow-hidden rounded-md">
+                <a
+                  href="#"
+                  class="absolute left-4 top-4 bg-purpel text-white font-semibold text-sm py-1 px-2 rounded-t-md rounded-b-sm transition-all duration-100 z-10 hover:bg-secondry hover:skew-x-12"
+                  >Lifestyles</a
+                >
+                <img
+                  src="./assets/images/home/blog-4-768x525.jpg"
+                  class="transition-all duration-200 hover:scale-105 cursor-pointer"
+                />
+              </div>
+              <div class="flex text-xs my-5">
+                <p class="mr-4">
+                  <i class="fa-solid fa-user text-primary mr-2"></i>By
+                  <a href="#" class="text-black font-semibold">Admin</a>
+                </p>
+                <p>
+                  <i class="fa-solid fa-calendar-days text-primary mr-2"></i
+                  ><a href="#">June 3, 2022</a>
+                </p>
+              </div>
+              <div class="text-color">
+                <a href="#" class="text-xl font-bold text-black"
+                  >How To Choose The Right Bully Stick For Your Dog</a
+                >
+                <p class="text-sm mt-4 mb-8 leading-7">
+                  Below is an excerpt of porch.com’s article “Moving With Pets?
+                  We Have the Experts’ Advice to Do It Properly”. For…
+                </p>
+                <button
+                  class="bg-purpel text-white rounded-full py-3 px-5 flex items-center hover:bg-secondry"
+                >
+                  Read More
+                  <i
+                    class="fa-solid fa-angle-right clear-left text-secondary bg-white rounded-full w-5 h-5 ml-3 flex items-center justify-center"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <div class="mb-10">
+              <div class="relative overflow-hidden rounded-md">
+                <a
+                  href="#"
+                  class="absolute left-4 top-4 bg-purpel text-white font-semibold text-sm py-1 px-2 rounded-t-md rounded-b-sm transition-all duration-100 z-10 hover:bg-secondry hover:skew-x-12"
+                  >Lifestyles</a
+                >
+                <img
+                  src="./assets/images/home/blog-8-768x525.jpg"
+                  class="transition-all duration-200 hover:scale-105 cursor-pointer"
+                />
+              </div>
+              <div class="flex text-xs my-5">
+                <p class="mr-4">
+                  <i class="fa-solid fa-user text-primary mr-2"></i>By
+                  <a href="#" class="text-black font-semibold">Admin</a>
+                </p>
+                <p>
+                  <i class="fa-solid fa-calendar-days text-primary mr-2"></i
+                  ><a href="#">June 3, 2022</a>
+                </p>
+              </div>
+              <div class="text-color">
+                <a href="#" class="text-xl font-bold text-black"
+                  >How To Choose The Right Bully Stick For Your Dog</a
+                >
+                <p class="text-sm mt-4 mb-8 leading-7">
+                  Below is an excerpt of porch.com’s article “Moving With Pets?
+                  We Have the Experts’ Advice to Do It Properly”. For…
+                </p>
+                <button
+                  class="bg-purpel text-white rounded-full py-3 px-5 flex items-center hover:bg-secondry"
+                >
+                  Read More
+                  <i
+                    class="fa-solid fa-angle-right clear-left text-secondary bg-white rounded-full w-5 h-5 ml-3 flex items-center justify-center"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rotate-180">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 1920 70"
+            class="text-white bg-primary"
+          >
+            <g fill="currentColor" class="nc-icon-wrapper">
+              <g
+                transform="matrix(.1 0 0 -.1 0 70)"
+                fill="currentColor"
+                stroke="none"
+              >
+                <path
+                  class="elementor-shape-fill"
+                  d="M0 510V319l48 27c26 15 51 31 56 36 6 4 19 8 31 8 11 0 31 7 44 16 27 19 103 14 186-12 120-38 395-61 395-33 0 6-7 9-15 5-8-3-15 0-15 5 0 7 10 9 28 5 15-4 47-9 72-12s90-16 145-28c91-21 180-26 202-13 5 3 63-5 129-19 128-26 281-54 302-54 6 0 12 7 12 15 0 9-10 15-26 15-34 0-188 29-244 46-39 12-41 13-10 10 80-11 167-27 194-36 16-6 47-10 70-10 42-1 145-22 166-35 6-4 48-9 93-11 45-3 102-9 127-14 25-6 104-12 175-15 72-4 141-8 155-10 219-36 548-51 572-27 8 8 3 13-18 18-17 4-29 3-31-3s-14-8-25-5c-21 5-21 6-2 12 15 6 13 9-16 14-32 6-257 28-425 42-38 4-77 10-85 15-9 6 95 7 259 4 151-4 278-8 283-11 7-4 191-5 277-1 19 1 36 7 38 13 4 11-80 10-131-1-10-2-42 0-70 5-28 6-78 12-111 14-50 3-215 19-315 30-71 9-120 19-120 26 0 5 9 6 20 3s20 0 20 5c0 7 22 11 56 11 31-1 51-5 45-9-9-5-8-9 4-14 9-3 21-4 25-1 5 3 43 8 86 11s82 7 86 10 8 1 8-4c0-9 19-12 85-12 174-1 221-3 223-11 2-5 10-5 21 0 9 5 61 6 116 3 55-4 145-6 200-4s116 3 136 3c25 1 46 9 70 30 19 16 43 32 54 35 11 4 33 17 48 30 16 13 38 24 49 24 17 0 124 23 213 46 16 4 17 3 5-5-31-21 3-22 112-3 62 11 127 17 144 15 17-3 76 2 130 10s106 15 114 16c8 0 53 7 100 16 47 8 134 18 194 21s118 10 128 15c12 7 18 6 18-1 0-6 8-9 18-6 37 11 261 28 430 32 97 3 265 8 372 11 277 10 520 9 704 0 116-7 156-6 151 2-4 8 5 10 32 7 149-20 290-28 377-22 56 3 125 2 153-3 29-6 74-13 100-17 26-3 114-28 194-55s152-49 158-49c7 0 19-7 27-15 11-11 35-15 82-14 51 1 61 3 42 10-18 6-12 7 25 4 28-2 118-9 200-15 83-6 173-15 200-21 74-14 166-28 300-43 104-13 122-13 136 0 8 8 23 14 33 14 9 0 28 7 41 16 19 12 28 14 38 5 8-6 16-8 19-5s39 1 79-5c41-6 118-13 172-17 55-3 125-13 158-24 32-10 62-14 64-9 6 9 207 5 224-5 5-4 12-2 15 3s47 9 98 10 102 4 114 7 32 1 43-6c14-7 21-7 21 0 0 6 44 9 123 8 67-1 128 1 135 6 7 4 19 2 27-4 9-8 15-8 15-2 0 11 154 8 190-3 23-7 48 4 32 14-6 3 12 7 39 8 26 1 51-2 54-7 4-6 16-10 28-11 34-1-27-18-88-24-27-3-84-10-126-15-165-22-309-33-414-31-73 1-107-1-100-8 6-5 53-11 105-11 111-2 408 9 431 16 9 2 28 0 43-5 14-6 26-7 26-3s59 8 130 9c72 1 130-2 130-6 0-5-35-12-77-16-43-4-91-9-108-10-63-6-163-15-247-21-54-3-93-11-105-21-10-8-13-12-6-9 6 4 14 2 18-4 3-5-3-10-14-10-12 0-21 5-21 10 0 6-9 10-21 10-11 0-17-5-14-10s0-10-7-11c-7 0-5-4 5-7 19-8 316-6 357 2 14 2 61 9 105 15s91 13 105 16c14 2 86 7 160 10 74 2 151 9 170 15 19 5 66 10 105 10 38 1 88 7 109 15 22 7 71 19 110 25s96 16 126 22 68 12 85 15c16 2 52 8 78 14s51 9 54 6c7-7-47-20-167-41-136-24-140-25-140-38 0-7 14-9 43-4 103 15 168 27 252 45 49 10 93 17 98 14 4-2 14 1 22 7 12 10 18 10 30 0s31-8 97 13c81 25 196 40 513 69 249 23 2601 17 3050-8 125-7 390-32 470-44 78-13 80-13 66 4-15 18-100 32-321 52-283 25-664 33-1925 39-654 3-1210 9-1235 12l-45 7 45 7c71 12 433 9 447-3 9-7 13-7 13 1 0 14 1144 15 1800 1 600-13 1172-43 1126-60-14-5-3-10 39-18 32-7 69-12 82-12s23-4 23-10c0-5-7-10-15-10s-15-4-15-9c0-10 15-16 70-26 58-11 70-16 70-28 0-7 10-14 23-15s70-13 127-26c56-14 107-23 111-20 5 2 41 5 81 5 64 1 128-10 371-61 65-13 77-13 77 5 0 9-9 15-22 15-26 0-170 29-177 36-8 8 44 4 79-7 19-5 69-14 110-19 107-12 141-18 154-29 6-5 56-13 110-16 54-4 109-10 121-15 28-10 122-16 131-8 3 4 16 4 28 0 11-4 48-7 81-6s65-2 70-7c6-4 20-7 30-5 11 2 31-1 45-5s48-11 75-14c88-10 392-18 421-10l29 7-30 12c-16 7-31 9-33 4-2-4-20-7-40-7l-37 2 35 6c49 9 21 24-42 22-28 0-47 3-43 9 3 5-5 7-17 4-37-7-425 33-414 43 5 5 138 4 366-3 277-9 480-10 492-3 25 16 0 19-78 11-55-6-99-5-146 4-36 7-81 12-100 12-89-2-381 36-407 53-14 9-14 10 1 5 10-3 20-1 23 5 9 13 87 8 102-7 8-8 26-9 55-4 68 12 169 19 164 11-3-3 61-7 142-8s160-6 175-12c20-8 26-8 22 0-5 7 23 8 92 4 109-7 258-8 317-1 21 3 48 1 60-4 13-5 37-3 61 6 21 7 41 11 45 9 3-2 24 1 46 6 21 5 92 12 158 14 65 3 126 10 135 14 10 6 24 5 34 0 16-9 17 3 17 171v180H0V510zm6547 124c-3-3-12-4-19-1-8 3-5 6 6 6 11 1 17-2 13-5zm5713-131c0-5-44-9-98-9-71-1-85 0-52 6 63 10 150 11 150 3zm-4597-20c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm8184-39c-3-3-12-4-19-1-8 3-5 6 6 6 11 1 17-2 13-5zm46-1c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm-4353-63c-8-5-24-9-35-9-16 1-16 2 5 9 35 11 48 11 30 0zM1285 340c13-5 14-9 5-9-8 0-24 4-35 9-13 5-14 9-5 9 8 0 24-4 35-9zm9344-23c-10-9-109-17-109-9 0 5 26 10 57 11s55 0 52-2zm5806-17c7-12-2-12-30 0-19 8-19 9 2 9 12 1 25-3 28-9zm84-6c17-4 31-11 31-16 0-6-10-7-22-3-13 3-36 10-53 15-22 6-25 8-9 9 12 1 36-2 53-5zM2270 270c0-11-21-11-65 0-27 7-25 8 18 9 26 0 47-3 47-9zm8093-27c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm-90-10c-7-2-21-2-30 0-10 3-4 5 12 5 17 0 24-2 18-5zm7131-3c-6-6-21-6-39-1-30 9-30 9 10 10 25 1 36-2 29-9zm-7326-7c-10-2-26-2-35 0-10 3-2 5 17 5s27-2 18-5zm-7615-20c-7-2-21-2-30 0-10 3-4 5 12 5 17 0 24-2 18-5zm84-9c-3-3-12-4-19-1-8 3-5 6 6 6 11 1 17-2 13-5zm213-4c0-5-15-9-32-9l-33 1 30 8c17 4 31 8 33 9 1 0 2-3 2-9zm14843-27c-7-2-19-2-25 0-7 3-2 5 12 5s19-2 13-5zm292-13c-3-5-16-10-28-9-21 0-21 1-2 9 28 12 37 12 30 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M5647 614c-1-1-32-4-68-8-36-3-79-8-95-11s-112-9-213-15c-100-6-204-15-230-20-25-5-66-11-91-14-81-8-124-18-109-26 15-9 318 3 498 20 63 6 281 10 485 9s421-1 481 1c61 2 133 4 162 4 83 1 46 15-67 25-284 26-380 32-558 34-107 1-194 1-195 1z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M12805 375c96-18 97-18 120-16 17 3 17 4-5 11-24 8-24 8 6 9 16 1 34-3 40-8 12-12 752-22 779-11 12 5-39 8-125 8-80 0-257 2-395 4-175 2-93 4 275 8l525 5-645 2c-559 1-636-1-575-12z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M8425 375c21-10 156-21 161-13 3 4-12 8-34 8s-61 2-88 5-44 3-39 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M13835 340c102-11 175-11 150 0-11 5-65 8-120 8l-100-1 70-7z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M14125 340l-30-8 33-1c17 0 32 4 32 9 0 6-1 9-2 9-2-1-16-5-33-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M770 331c0-8 85-22 130-20 20 1 17 4-15 14-46 15-115 19-115 6z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M15748 313c12-2 32-2 45 0 12 2 2 4-23 4s-35-2-22-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M15914 293c8-8 23-11 96-18 54-5 54-5 25 9-30 15-135 22-121 9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M11525 260c-7-12 2-12 30 0 19 8 19 9-2 9-12 1-25-3-28-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M11490 250c-9-6-10-10-3-10 6 0 15 5 18 10 8 12 4 12-15 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10850 241c0-8 79-3 89 5 2 2-17 4-42 4-26 0-47-4-47-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1220 226c0-9 40-13 46-5 3 5-6 9-20 9s-26-2-26-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10770 219c0-5 5-7 10-4 6 3 10 8 10 11 0 2-4 4-10 4-5 0-10-5-10-11z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1864 209c-13-5-3-8 29-8 26-1 47 1 47 3 0 8-58 12-76 5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1328 203c7-3 16-2 19 1 4 3-2 6-13 5-11 0-14-3-6-6z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M9655 190c-3-5 3-10 14-10 12 0 21 5 21 10 0 6-6 10-14 10s-18-4-21-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M11005 189c-64-7-124-33-100-42 19-8 296 30 307 41 9 9-135 10-207 1z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M16360 190c0-5 12-10 28-9 24 0 25 1 7 9-27 12-35 12-35 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M2005 180c3-5 8-10 11-10 2 0 4 5 4 10 0 6-5 10-11 10-5 0-7-4-4-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M16465 170c-3-5-1-10 4-10 6 0 11 5 11 10 0 6-2 10-4 10-3 0-8-4-11-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17005 170c3-5 22-10 41-10 21 0 33 4 29 10-3 6-22 10-41 10-21 0-33-4-29-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1585 150c40-15 223-41 266-38l44 3-37 18c-28 15-65 19-165 21-70 2-119 0-108-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M3105 150c3-5 13-10 21-10s12 5 9 10c-3 6-13 10-21 10s-12-4-9-10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10730 140c-23-7-23-8-3-9 12-1 25 4 28 9 3 6 5 10 3 9s-14-5-28-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10780 140c0-11 14-11 50 0 22 7 21 8-12 9-21 1-38-3-38-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M16710 120c0-5 21-12 48-15 26-4 79-13 119-21 84-16 153-18 153-4 0 6-8 10-18 10s-23 5-28 10c-6 6-55 13-110 16-54 2-114 7-131 9-18 2-33 0-33-5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1940 108c0-5 18-8 40-8s40 2 40 4-18 6-40 8-40 0-40-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M18240 116c0-9 30-14 35-6 4 6-3 10-14 10-12 0-21-2-21-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M2035 100c3-5 16-10 28-9 21 0 21 1 2 9-28 12-37 12-30 0z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10533 90c-50-4-88-11-95-19-11-11 12-13 137-7 164 7 225 14 225 27 0 9-120 8-267-1z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10826 92c-3-5 8-6 25-4 16 2 29 6 29 8 0 8-49 4-54-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M10943 73c9-2 23-2 30 0 6 3-1 5-18 5-16 0-22-2-12-5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17086 69c3-5 21-9 41-9 45 0 40 6-9 13-21 3-35 1-32-4z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17185 60c27-12 43-12 25 0-8 5-22 9-30 9-10 0-8-3 5-9z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1923 53c9-2 25-2 35 0 9 3 1 5-18 5s-27-2-17-5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M1990 52c0-18 282-40 341-27 34 8 34 8 9 17-35 13-350 22-350 10z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17063 13c9-2 25-2 35 0 9 3 1 5-18 5s-27-2-17-5z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M17130 11c0-5 80-9 178-9 122 0 165 2 137 8-53 12-315 12-315 1z"
+                ></path>
+                <path
+                  class="elementor-shape-fill"
+                  d="M16958 3c7-3 16-2 19 1 4 3-2 6-13 5-11 0-14-3-6-6z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+
+      <!-- 
+        Comment
+       -->
+      <div class="container m-auto px-4">
+        <div class="mb-20">
+          <div class="swiper commentSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="flex items-center border border-dashed border-secondary rounded-md p-4 md:py-14 md:px-32">
+                  <div class="flex flex-col items-center justify-center">
+                    <img src="./assets/images/home/avatar2-96x96.jpg" class="rounded-full mb-1">
+                    <span class="font-bold">Waylan</span>
+                    <span class="text-color">Cat Owner</span>
+                  </div>
+                  <div class="flex flex-col flex-1 ml-10">
+                    <div>
+                      <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-regular fa-star text-xs"></i>
+                    </div>
+                    <p class="text-sm font-normal md:text-lg md:font-semibold mt-3">This is simply unbelievable! Pet shop did exactly what you said it does. I'm good to go. Pet shop is great. One cats horrid breath...gone! One cat from a bit 'toround' to almost perfect weight.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex items-center border border-dashed border-secondary rounded-md p-4 md:py-14 md:px-32">
+                  <div class="flex flex-col items-center justify-center">
+                    <img src="./assets/images/home/avatar1-96x96.jpg" class="rounded-full mb-1">
+                    <span class="font-bold">John Alvy</span>
+                    <span class="text-color">Engineer</span>
+                  </div>
+                  <div class="flex flex-col flex-1 ml-10">
+                    <div>
+                      <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-regular fa-star text-xs"></i>
+                    </div>
+                    <p class="text-sm font-normal md:text-lg md:font-semibold mt-3">“ These are the perfect size for our small dog. The design is cute and the rubber on the bottom is great because it makes them more durable. They’ve held up to being tipped and played with by the baby and are easy to clean. ”</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex items-center border border-dashed border-secondary rounded-md p-4 md:py-14 md:px-32">
+                  <div class="flex flex-col items-center justify-center">
+                    <img src="./assets/images/home/avatar3-96x96.jpg" class="rounded-full mb-1">
+                    <span class="font-bold">Jack Morrison</span>
+                    <span class="text-color">Dog Owner</span>
+                  </div>
+                  <div class="flex flex-col flex-1 ml-10">
+                    <div>
+                      <i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-solid fa-star text-xs" style="color: yellow"></i
+                      ><i class="fa-regular fa-star text-xs"></i>
+                    </div>
+                    <p class="text-sm font-normal md:text-lg md:font-semibold mt-3">Thank you so much! My cat has severe food allergies and pretty much can only eat rabbit, apples, and chicken. This is the only way I can feed her without her throwing up all the time and chewing her fur out.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-5">
+          <div
+            class="relative cursor-pointer flex items-center justify-center after:transition-all after:duration-300 hover:after:opacity-100 hover:before:bg-opacity-50 after:content-['+'] after:absolute after:rounded-full after:bg-white after:py-2 after:px-4 after:text-xl after:opacity-0 before:transition-all before:duration-300 before:content-[' '] before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-0 before:rounded-md"
+          >
+            <img
+              src="./assets/images/gallery_5-pp2nzct7p6stljxd46s4w00l7han3qduresogzcls4.jpg"
+              class="w-full h-full rounded-md"
+            />
+          </div>
+          <div
+            class="relative cursor-pointer flex items-center justify-center after:transition-all after:duration-300 hover:after:opacity-100 hover:before:bg-opacity-50 after:content-['+'] after:absolute after:rounded-full after:bg-white after:py-2 after:px-4 after:text-xl after:opacity-0 before:transition-all before:duration-300 before:content-[' '] before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-0 before:rounded-md"
+          >
+            <img
+              src="./assets/images/gallery_4-pp2nzje3111tutnt1rmivgctd6e7lm3z4bd2tx2ukk.jpg"
+              class="w-full h-full rounded-md"
+            />
+          </div>
+          <div
+            class="relative cursor-pointer flex items-center justify-center after:transition-all after:duration-300 hover:after:opacity-100 hover:before:bg-opacity-50 after:content-['+'] after:absolute after:rounded-full after:bg-white after:py-2 after:px-4 after:text-xl after:opacity-0 before:transition-all before:duration-300 before:content-[' '] before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-0 before:rounded-md"
+          >
+            <img
+              src="./assets/images/gallery_3-ppyae4zfql51wy5cg7z7v4yvledk9n6vdcnfc1rps4.jpg"
+              class="w-full h-full rounded-md"
+            />
+          </div>
+          <div
+            class="relative cursor-pointer flex items-center justify-center after:transition-all after:duration-300 hover:after:opacity-100 hover:before:bg-opacity-50 after:content-['+'] after:absolute after:rounded-full after:bg-white after:py-2 after:px-4 after:text-xl after:opacity-0 before:transition-all before:duration-300 before:content-[' '] before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-0 before:rounded-md"
+          >
+            <img
+              src="./assets/images/gallery_2-pp2nzzdc97npc70lggj6jubngq7g8gveuigbzmf5ms.jpg"
+              class="w-full h-full rounded-md"
+            />
+          </div>
+          <div
+            class="relative cursor-pointer flex items-center justify-center after:transition-all after:duration-300 hover:after:opacity-100 hover:before:bg-opacity-50 after:content-['+'] after:absolute after:rounded-full after:bg-white after:py-2 after:px-4 after:text-xl after:opacity-0 before:transition-all before:duration-300 before:content-[' '] before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-0 before:rounded-md"
+          >
+            <img
+              src="./assets/images/gallery_1-pp2o06w1rvxzx2po8js73sfc7t6dy1p9jjo7tu4090.jpg"
+              class="w-full h-full rounded-md"
+            />
+          </div>
+        </div>
+        <div class="iconSwiper overflow-hidden my-16">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide m-0 flex items-center justify-center">
+              <div class="w-24 h-24 cursor-pointer transition-all duration-300 hover:grayscale hover:scale-90">
+                <img src="./assets/images/brand-1.svg" class="w-full h-full" />
+              </div>
+            </div>
+            <div class="swiper-slide m-0 flex items-center justify-center">
+              <div class="w-24 h-24 cursor-pointer transition-all duration-300 hover:grayscale hover:scale-90">
+                <img src="./assets/images/brand-2.svg" class="w-full h-full" />
+              </div>
+            </div>
+            <div class="swiper-slide m-0 flex items-center justify-center">
+              <div class="w-24 h-24 cursor-pointer transition-all duration-300 hover:grayscale hover:scale-90">
+                <img src="./assets/images/brand-3.svg" class="w-full h-full" />
+              </div>
+            </div>
+            <div class="swiper-slide m-0 flex items-center justify-center">
+              <div class="w-24 h-24 cursor-pointer transition-all duration-300 hover:grayscale hover:scale-90">
+                <img src="./assets/images/brand-4.svg" class="w-full h-full" />
+              </div>
+            </div>
+            <div class="swiper-slide m-0 flex items-center justify-center">
+              <div class="w-24 h-24 cursor-pointer transition-all duration-300 hover:grayscale hover:scale-90">
+                <img src="./assets/images/brand-5.svg" class="w-full h-full" />
+              </div>
+            </div>
+            <div class="swiper-slide m-0 flex items-center justify-center">
+              <div class="w-24 h-24 cursor-pointer transition-all duration-300 hover:grayscale hover:scale-90">
+                <img src="./assets/images/brand-6.svg" class="w-full h-full" />
+              </div>
+            </div>
+            <div class="swiper-slide m-0 flex items-center justify-center">
+              <div class="w-24 h-24 cursor-pointer transition-all duration-300 hover:grayscale hover:scale-90">
+                <img src="./assets/images/brand-7.svg" class="w-full h-full" />
+              </div>
+            </div>
+            <div class="swiper-slide m-0 flex items-center justify-center">
+              <div class="w-24 h-24 cursor-pointer transition-all duration-300 hover:grayscale hover:scale-90">
+                <img src="./assets/images/brand-1.svg" class="w-full h-full" />
+              </div>
+            </div>
+            <div class="swiper-slide m-0 flex items-center justify-center">
+              <div class="w-24 h-24 cursor-pointer transition-all duration-300 hover:grayscale hover:scale-90">
+                <img src="./assets/images/brand-2.svg" class="w-full h-full" />
+              </div>
+            </div>
+            <div class="swiper-slide m-0 flex items-center justify-center">
+              <div class="w-24 h-24 cursor-pointer transition-all duration-300 hover:grayscale hover:scale-90">
+                <img src="./assets/images/brand-3.svg" class="w-full h-full" />
+              </div>
+            </div>
+            <div class="swiper-slide m-0 flex items-center justify-center">
+              <div class="w-24 h-24 cursor-pointer transition-all duration-300 hover:grayscale hover:scale-90">
+                <img src="./assets/images/brand-4.svg" class="w-full h-full" />
+              </div>
+            </div>
+            <div class="swiper-slide m-0 flex items-center justify-center">
+              <div class="w-24 h-24 cursor-pointer transition-all duration-300 hover:grayscale hover:scale-90">
+                <img src="./assets/images/brand-5.svg" class="w-full h-full" />
+              </div>
+            </div>
+            <div class="swiper-slide m-0 flex items-center justify-center">
+              <div class="w-24 h-24 cursor-pointer transition-all duration-300 hover:grayscale hover:scale-90">
+                <img src="./assets/images/brand-6.svg" class="w-full h-full" />
+              </div>
+            </div>
+            <div class="swiper-slide m-0 flex items-center justify-center">
+              <div class="w-24 h-24 cursor-pointer transition-all duration-300 hover:grayscale hover:scale-90">
+                <img src="./assets/images/brand-7.svg" class="w-full h-full" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+
+    <!-- 
+        Footer
+     -->
+    <footer
+      class="text-sm text-color bg-center bg-no-repeat border-t border-dashed border-primary"
+      style="background-image: url(./assets/images/footer-bg.jpg)"
+    >
+      <div class="xl:container xl:m-auto">
+        <!-- FooterContent -->
+        <section class="border-b border-dashed border-primary px-12 my-12">
+          <div
+            class="grid grid-cols-1 items-start justify-center gap-8 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 xl:items-start"
+          >
+            <div
+              class="flex justify-center items-center flex-col gap-3 xl:items-start"
+            >
+              <a href="">
+                <img src="./assets/images/logo.svg" alt="Footer-Logo" />
+              </a>
+              <p class="text-center xl:text-start">
+                We know pets are like family, so we are committed to providing
+                the highest-quality products that you can trust.
+              </p>
+              <p class="font-bold text-black"><span>icno</span>Hotline Order</p>
+              <p class="text-primary font-bold text-xl mb-2">(877) 834 1434</p>
+              <div class="flex">
+                <span
+                  class="rounded-full w-10 h-10 flex items-center justify-center mr-2 bg-inp cursor-pointer hover:bg-purpel hover:text-white"
+                  ><i class="fa-brands fa-facebook"></i
+                ></span>
+                <span
+                  class="rounded-full w-10 h-10 flex items-center justify-center mx-2 bg-inp cursor-pointer hover:bg-purpel hover:text-white"
+                  ><i class="fa-brands fa-twitter"></i
+                ></span>
+                <span
+                  class="rounded-full w-10 h-10 flex items-center justify-center mx-2 bg-inp cursor-pointer hover:bg-purpel hover:text-white"
+                  ><i class="fa-brands fa-instagram"></i
+                ></span>
+                <span
+                  class="rounded-full w-10 h-10 flex items-center justify-center mx-2 bg-inp cursor-pointer hover:bg-purpel hover:text-white"
+                  ><i class="fa-brands fa-pinterest"></i
+                ></span>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col xl:items-start"
+            >
+              <h2 class="font-bold mb-3 text-black">USEFUL LINKS</h2>
+              <ul class="">
+                <li class="my-3"><a href="">New Products</a></li>
+                <li class="my-3"><a href="">Best Sellers</a></li>
+                <li class="my-3"><a href="">Bundle & Save</a></li>
+                <li class="my-3"><a href="">Online Gift Card</a></li>
+                <li class="my-3"><a href="">Discount</a></li>
+                <li class="my-3"><a href="">Pet Store Locator</a></li>
+              </ul>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col xl:items-start"
+            >
+              <h2 class="font-bold mb-3 text-black">MY ACCOUNT</h2>
+              <ul class="">
+                <li class="my-3"><a href="">My Profile</a></li>
+                <li class="my-3"><a href="">My Order History</a></li>
+                <li class="my-3"><a href="">My Wish List</a></li>
+                <li class="my-3"><a href="">Order Tracking</a></li>
+                <li class="my-3"><a href="">Shipping Info</a></li>
+                <li class="my-3"><a href="">Shopping Cart</a></li>
+              </ul>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col xl:items-start"
+            >
+              <h2 class="font-bold mb-3 text-black">COMPANY</h2>
+              <ul class="">
+                <li class="my-3"><a href="">About Us</a></li>
+                <li class="my-3"><a href="">Careers</a></li>
+                <li class="my-3"><a href="">Blog</a></li>
+                <li class="my-3"><a href="">Affiliate</a></li>
+                <li class="my-3"><a href="">Contact Us</a></li>
+                <li class="my-3"><a href="">Gift Cards</a></li>
+              </ul>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col gap-4 sm:col-span-2 md:col-2 lg:col-span-4 xl:col-auto xl:items-start"
+            >
+              <h2 class="font-bold mb-4 text-black">NEWSLETTER</h2>
+              <p class="text-center xl:text-start">
+                Subscrible & get <span class="text-primary">10%</span> discount.
+                Get E-mail updates about our latest shop and
+                <span class="text-primary">special offers</span>.
+              </p>
+              <div class="relative w-full max-w-sm">
+                <input
+                  type="text"
+                  placeholder="Enter Your Email..."
+                  class="bg-inp rounded-full p-3 w-full focus:outline-purple-600 text-xs"
+                />
+                <span
+                  class="bg-purpel rounded-full absolute right-1.5 top-1.5 p-1.5 cursor-pointer"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    enable-background="new 0 0 24 24"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    width="15"
+                    class="fill-white"
+                  >
+                    <g>
+                      <rect fill="none" height="24" width="24" />
+                      <path
+                        d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h9v-2H4V8l8,5l8-5v5h2V6C22,4.9,21.1,4,20,4z M12,11L4,6h16L12,11z M19,15l4,4 l-4,4v-3h-4v-2h4V15z"
+                      />
+                    </g>
+                  </svg>
+                </span>
+              </div>
+              <p class="text-black font-bold flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 mr-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                  />
+                </svg>
+                Download Our App
+              </p>
+              <div class="flex items-center">
+                <img
+                  src="./assets/images/App-Store.jpg"
+                  alt="App-Store"
+                  class="mr-3 cursor-pointer w-24 sm:w-32"
+                />
+                <img
+                  src="./assets/images/Google-Play.jpg"
+                  alt="Google-Play"
+                  class="cursor-pointer w-24 sm:w-32"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CopyRight -->
+        <div
+          class="grid justify-center items-center md:grid-cols-2 lg:grid-cols-3 lg:container lg:m-auto pb-20"
+        >
+          <div class="text-center">
+            <p class="text-xs">
+              Copyright © 2022
+              <a href="" class="text-color hover:text-primary">Bolori</a>. All
+              rights reserved.
+            </p>
+          </div>
+          <div class="my-5 m-auto">
+            <img src="./assets/images/payment.png" alt="Payment" />
+          </div>
+          <div class="text-center md:col-span-3 lg:col-span-1">
+            <a href="#" class="text-color text-xs hover:text-primary"
+              >Privacy & Cookie Policy</a
+            >
+            <span class="mx-2 text-xs">|</span>
+            <a href="#" class="text-color text-xs hover:text-primary"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    @font-face {
+        font-family: 'Helvetica';
+        src: url(../fonts/helvetica/HelveticaBQ-Light.eot);
+        src: url(../fonts/helvetica/HelveticaBQ-Light.eot?#iefix) format('embedded-opentype'),
+             url(../fonts/helvetica/HelveticaBQ-Light.otf) format('otf'),
+             url(../fonts/helvetica/HelveticaBQ-Light.svg#HelveticaBQ-Light) format('svg'),
+             url(../fonts/helvetica/HelveticaBQ-Light.ttf) format('truetype'),
+             url(../fonts/helvetica/HelveticaBQ-Light.woff2) format('woff2'),
+             url(../fonts/helvetica/HelveticaBQ-Light.woff) format('woff');
+      }
+}

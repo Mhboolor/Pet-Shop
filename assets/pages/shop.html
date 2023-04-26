@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet-Shop</title>
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body class="font-Helvetica relative">
+    <!-- 
+        Header
+     -->
+     <header>
+      <!-- Top Header -->
+      <div class="bg-purpel text-white text-sm py-2">
+        <div
+          class="flex items-center justify-center px-4 lg:justify-between xl:container xl:m-auto"
+        >
+          <div class="flex md:hidden lg:flex">
+            <a href="" class="mr-6 hover:text-primary"
+              ><i class="fa-solid fa-location-dot mr-2"></i>Find a Store</a
+            >
+            <a href="" class="hover:text-primary"
+              ><i class="fa-solid fa-truck-arrow-right mr-2"></i>Order
+              Traking</a
+            >
+          </div>
+          <div class="hidden items-center md:flex">
+            <span class="rounded-full bg-secondry py-1 px-2 font-bold mr-3"
+              >15% Off</span
+            >
+            <p>$50+ when you buy online & pick up in-store</p>
+          </div>
+          <div class="hidden lg:flex">
+            <ul class="flex items-center">
+              <li
+                class="font-semibold relative mr-10 hover:text-primary cursor-pointer"
+              >
+                USD
+                <i class="fa-solid fa-angle-down"></i>
+                <ul
+                  class="hidden text-color flex-col items-start justify-center font-medium bg-white absolute min-w-fit w-full px-2"
+                >
+                  <li class="my-1 p-2"><a href="#">EURU</a></li>
+                  <li class="my-1 p-2"><a href="#">TOMAN</a></li>
+                </ul>
+              </li>
+              <li
+                class="font-semibold relative hover:text-primary cursor-pointer"
+              >
+                English
+                <i class="fa-solid fa-angle-down"></i>
+                <ul
+                  class="hidden text-color flex-col items-start justify-center font-medium bg-white absolute min-w-fit w-full px-2"
+                >
+                  <li class="my-1 p-2"><a href="#">Persian</a></li>
+                  <li class="my-1 p-2"><a href="#">German</a></li>
+                  <li class="my-1 p-2"><a href="#">italian</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- NavBar -->
+      <section
+        class="container m-auto py-5 flex items-center justify-between px-4"
+      >
+        <span
+          class="bg-black absolute top-0 left-0 w-full h-full z-20 bg-opacity-60 hidden lg:hidden"
+          data-menu-btn="background"
+        ></span>
+        <a href="shop.html"><img src="../images/logo.svg" alt="Logo" /></a>
+        <nav
+          class="fixed top-0 left-0 bg-white w-full font-semibold max-w-sm z-30 h-full -translate-x-96 transition-all duration-500 lg:relative lg:translate-x-0 lg:transition-none"
+          data-menu
+        >
+          <div
+            class="flex items-center justify-between bg-slate-200 py-4 px-6 lg:hidden"
+          >
+            <h2>Main Menu</h2>
+            <span data-menu-btn="close"
+              ><i class="fa-solid fa-xmark text-xl"></i
+            ></span>
+          </div>
+          <ul
+            class="p-6 text-base lg:p-0 lg:flex lg:items-center lg:justify-center"
+          >
+            <li class="border-b pb-4 lg:border-none lg:p-0 lg:mx-4">
+              <a
+                href="../../index.html"
+                class="hover:text-primary relative before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:-bottom-2 before:bg-secondry before:h-0.5 before:w-0 hover:before:w-full after:transition-all after:duration-500 after:content-[''] after:absolute after:right-0 after:-bottom-2 after:bg-secondry after:h-0.5 after:w-0 hover:after:w-full"
+                >Home</a
+              >
+            </li>
+            <li class="border-b py-4 lg:border-none lg:p-0 lg:mx-4">
+              <a
+                href="../pages/shop.html"
+                class="hover:text-primary relative before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:-bottom-2 before:bg-secondry before:h-0.5 before:w-0 hover:before:w-full after:transition-all after:duration-500 after:content-[''] after:absolute after:right-0 after:-bottom-2 after:bg-secondry after:h-0.5 after:w-0 hover:after:w-full"
+                >Shop</a
+              >
+            </li>
+            <li class="border-b py-4 lg:border-none lg:p-0 lg:mx-4">
+              <a
+                href="../pages/blog.html"
+                class="hover:text-primary relative before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:-bottom-2 before:bg-secondry before:h-0.5 before:w-0 hover:before:w-full after:transition-all after:duration-500 after:content-[''] after:absolute after:right-0 after:-bottom-2 after:bg-secondry after:h-0.5 after:w-0 hover:after:w-full"
+                >Blog</a
+              >
+            </li>
+            <li class="py-4 lg:border-none lg:p-0 lg:mx-4">
+              <a
+                href="../pages/contact-us.html"
+                class="hover:text-primary relative before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:-bottom-2 before:bg-secondry before:h-0.5 before:w-0 hover:before:w-full after:transition-all after:duration-500 after:content-[''] after:absolute after:right-0 after:-bottom-2 after:bg-secondry after:h-0.5 after:w-0 hover:after:w-full"
+                >Contact</a
+              >
+            </li>
+            <li class="py-4 lg:border-none lg:p-0 lg:mx-4">
+              <a
+                href="../pages/error.html"
+                class="hover:text-primary relative before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:-bottom-2 before:bg-secondry before:h-0.5 before:w-0 hover:before:w-full after:transition-all after:duration-500 after:content-[''] after:absolute after:right-0 after:-bottom-2 after:bg-secondry after:h-0.5 after:w-0 hover:after:w-full"
+                >Error404</a
+              >
+            </li>
+          </ul>
+          <div class="absolute bottom-0 left-0 w-full lg:hidden">
+            <figure class="flex items-center mx-6 border-t py-4">
+              <img
+                src="../images/en.jpg"
+                alt="English-Flag"
+                class="w-6 h-4 mr-3"
+              />
+              <img
+                src="../images/de.jpg"
+                alt="Germany-Flag"
+                class="w-6 h-4 mr-3"
+              />
+              <img
+                src="../images/it.jpg"
+                alt="italy-Flag"
+                class="w-6 h-4 mr-3"
+              />
+            </figure>
+          </div>
+        </nav>
+        <div class="hidden relative w-full max-w-xs lg:flex">
+          <input
+            type="text"
+            placeholder="Enter Your Email..."
+            class="bg-inp rounded-full p-3 w-full focus:outline-purple-600 text-xs"
+          />
+          <span
+            class="bg-purpel rounded-full absolute right-1.5 top-1.5 cursor-pointer w-7 h-7 flex items-center justify-center"
+            ><i class="fa-solid fa-magnifying-glass text-white text-xs"></i
+          ></span>
+        </div>
+        <div
+          class="fixed bottom-0 left-0 w-full bg-white z-10 lg:relative lg:w-auto"
+        >
+          <div class="flex items-center justify-between">
+            <a
+              href="../pages/login-regester.html"
+              class="border border-collapse flex items-center justify-center flex-1 py-3 hover:text-primary lg:py-0 lg:border-none lg:flex-auto lg:mr-10"
+              ><i class="fa-regular fa-user text-2xl"></i
+            ></a>
+            <a
+              href="../pages/wishlist.html"
+              class="border border-collapse flex items-center justify-center flex-1 py-3 hover:text-primary lg:py-0 lg:border-none lg:flex-auto lg:mr-10"
+              ><i class="fa-regular fa-heart text-2xl"></i
+            ></a>
+            <a
+              href="../pages/cart.html"
+              class="border border-collapse flex items-center justify-center flex-1 py-3 hover:text-primary lg:py-0 lg:border-none lg:flex-auto"
+              ><i class="fa-solid fa-cart-shopping text-2xl"></i
+            ></a>
+          </div>
+        </div>
+        <span class="lg:hidden z-20" data-menu-btn="open"
+          ><i class="fa-solid fa-bars text-2xl cursor-pointer"></i
+        ></span>
+      </section>
+      <!-- Slider -->
+      <div></div>
+    </header>
+
+    <!-- 
+        Main
+     -->
+    <main class="border border-dashed pb-20">
+      <div class="px-4 lg:container lg:m-auto">
+        <div class="flex flex-col justify-between my-10 md:flex-row">
+          <div class="w-full mb-6 md:mr-6 md:w-700 overflow-hidden relative cursor-pointer rounded-md">
+            <div class="w-750 transition-all duration-500 -translate-x-10 hover:translate-x-0">
+              <img src="../images/h1-banner4.jpg" class="w-full">
+            </div>
+            <div class="font-bold text-white absolute top-14 left-10">
+              <h2 class="text-2xl">Dog Supplies</h2>
+              <div class="flex items-center font-bold my-3">
+                <span class="text-7xl mr-2">25</span>
+                <div class="flex flex-col">
+                  <span class="text-xl">%</span>
+                  <span class="text-xl">off</span>
+                </div>
+              </div>
+              <div class="mt-10 bg-no-repeat bg-cover py-1 pl-5 flex flex-col items-start justify-center" style="background-image: url('../images/h1-banner5.png')">
+                <h2 class="text-primary">Hotline Order</h2>
+                <h2>(877) 834-1434</h2>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-700 overflow-hidden relative cursor-pointer rounded-md">
+            <div class="w-750 transition-all duration-500 -translate-x-10 hover:translate-x-0">
+              <img src="../images/h1-banner6.jpg" class="w-full">
+            </div>
+            <div class="font-bold text-white absolute top-14 left-10">
+              <h2 class="text-2xl">Dog Supplies</h2>
+              <h2 class="text-5xl my-4">Premium</h2>
+              <h2 class="text-5xl">Cat Food</h2>
+              <h2 class="text-3xl mt-3">Save <span class="text-yellow-400">30%</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="text-sm flex items-center justify-start my-8">
+          <a href="../../index.html" class="text-color">Home Page</a><i class="fa-solid fa-angle-right text-xs mx-2"></i><span>Shop</span>
+        </div>
+        <article class="flex">
+          <aside class="hidden lg:flex flex-col items-start max-w-sx gap-4 mr-10">
+            <div class="border-b border-dashed w-full py-5">
+              <h2 class="text-xl font-bold">Product Categories</h2>
+            </div>
+            <div class="w-full text-lighter font-semibold text-sm">
+              <ul class="">
+                <li class="my-3"><a href="#" class="flex items-start justify-between hover:text-primary"><i class="fa-sharp fa-solid fa-paw mr-4 rotate-45"></i><span class="flex-1">Beds</span><span>(4)</span></a></li>
+                <li class="my-3"><a href="#" class="flex items-start justify-between hover:text-primary"><i class="fa-sharp fa-solid fa-paw mr-4 rotate-45"></i><span class="flex-1">Bowls</span><span>(2)</span></a></li>
+                <li class="my-3"><a href="#" class="flex items-start justify-between hover:text-primary"><i class="fa-sharp fa-solid fa-paw mr-4 rotate-45"></i><span class="flex-1">Clothings</span><span>(4)</span></a></li>
+                <li class="my-3"><a href="#" class="flex items-start justify-between hover:text-primary"><i class="fa-sharp fa-solid fa-paw mr-4 rotate-45"></i><span class="flex-1">Crates</span><span>(2)</span></a></li>
+                <li class="my-3"><a href="#" class="flex items-start justify-between hover:text-primary"><i class="fa-sharp fa-solid fa-paw mr-4 rotate-45"></i><span class="flex-1">Flea & Tick</span><span>(2)</span></a></li>
+                <li class="my-3"><a href="#" class="flex items-start justify-between hover:text-primary"><i class="fa-sharp fa-solid fa-paw mr-4 rotate-45"></i><span class="flex-1">Food</span><span>(1)</span></a></li>                
+                <li class="my-3"><a href="#" class="flex items-start justify-between hover:text-primary"><i class="fa-sharp fa-solid fa-paw mr-4 rotate-45"></i><span class="flex-1">Furniture</span><span>(2)</span></a></li>
+                <li class="my-3"><a href="#" class="flex items-start justify-between hover:text-primary"><i class="fa-sharp fa-solid fa-paw mr-4 rotate-45"></i><span class="flex-1">Pharmacy</span><span>(4)</span></a></li>
+                <li class="my-3"><a href="#" class="flex items-start justify-between hover:text-primary"><i class="fa-sharp fa-solid fa-paw mr-4 rotate-45"></i><span class="flex-1">Toys</span><span>(2)</span></a></li>
+                <li class="my-3"><a href="#" class="flex items-start justify-between hover:text-primary"><i class="fa-sharp fa-solid fa-paw mr-4 rotate-45"></i><span class="flex-1">Treats</span><span>(2)</span></a></li>
+                <li class="my-3"><a href="#" class="flex items-start justify-between hover:text-primary"><i class="fa-sharp fa-solid fa-paw mr-4 rotate-45"></i><span class="flex-1">Uncategorized</span><span>(1)</span></a></li>
+              </ul>
+            </div>
+            <div class="border-b border-dashed w-full pb-5">
+              <h2 class="text-xl font-bold">Filter By Price</h2>
+            </div>
+            <div class="flex-1 w-full">
+              <div>
+                <input type="range" class="w-full" min="0" max="1000" value="0">
+              </div>
+              <div class="flex items-center justify-between mt-3">
+                <div class="text-color">
+                  Price: <span>$0</span> -- <span>$950</span>
+                </div>
+                <div class="flex items-center">
+                  <button class="bg-secondary rounded-full text-white font-bold py-1 px-4 hover:bg-secondry">Filter <i class="fa-solid fa-angle-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="border-b border-dashed w-full py-5">
+              <h2 class="text-xl font-bold">Filter By Brands</h2>
+            </div>
+            <div class="w-full text-lighter font-semibold text-sm">
+              <ul class="">
+                <li class="my-3"><a href="#" class="flex items-start justify-between hover:text-primary"><i class="fa-sharp fa-solid fa-paw mr-4 rotate-45"></i><span class="flex-1">Ark Naturals</span><span>(1)</span></a></li>
+                <li class="my-3"><a href="#" class="flex items-start justify-between hover:text-primary"><i class="fa-sharp fa-solid fa-paw mr-4 rotate-45"></i><span class="flex-1">Arm & Hammer</span><span>(1)</span></a></li>
+                <li class="my-3"><a href="#" class="flex items-start justify-between hover:text-primary"><i class="fa-sharp fa-solid fa-paw mr-4 rotate-45"></i><span class="flex-1">Bags on Board</span><span>(1)</span></a></li>
+                <li class="my-3"><a href="#" class="flex items-start justify-between hover:text-primary"><i class="fa-sharp fa-solid fa-paw mr-4 rotate-45"></i><span class="flex-1">Beggin Strips</span><span>(0)</span></a></li>
+                <li class="my-3"><a href="#" class="flex items-start justify-between hover:text-primary"><i class="fa-sharp fa-solid fa-paw mr-4 rotate-45"></i><span class="flex-1">Canidae</span><span>(0)</span></a></li>
+                <li class="my-3"><a href="#" class="flex items-start justify-between hover:text-primary"><i class="fa-sharp fa-solid fa-paw mr-4 rotate-45"></i><span class="flex-1">Canine Carry Outs</span><span>(0)</span></a></li>                
+              </ul>
+            </div>
+            <div class="border-b border-dashed w-full py-5">
+              <h2 class="text-xl font-bold">Best Seller Products</h2>
+            </div>
+            <div class="mt-5 flex-1 w-full">
+              <div class="flex items-start gap-4 mb-6 cursor-pointer">
+                <div class="">
+                  <img src="../images/shop/product-19-1-96x96.jpg" alt="" class="rounded-md w-full h-full">
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <a href="#" class="hover:text-primary">Ergonomic Paper Clock</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                  <div>
+                    <span class="font-bold text-primary text-lg mr-1">$611.82</span>
+                    <span class="text-lighter text-xs line-through">$853.93</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 mb-6 cursor-pointer">
+                <div class="">
+                  <img src="../images/shop/product-17-1-96x96.jpg" alt="" class="rounded-md w-full h-full">
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <a href="#" class="hover:text-primary">Practical Rubber Bottle</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1">$131.82</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 mb-6 cursor-pointer">
+                <div class="">
+                  <img src="../images/shop/product-15-1-96x96.jpg" alt="" class="rounded-md w-full h-full">
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <a href="#" class="hover:text-primary">Fantastic Plastic Clock</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1">$305.82</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 mb-6 cursor-pointer">
+                <div class="">
+                  <img src="../images/shop/product-14-1-96x96.jpg" alt="" class="rounded-md w-full h-full">
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <a href="#" class="hover:text-primary">Intelligent Wooden Shirt</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1">$426.82</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 mb-6 cursor-pointer">
+                <div class="">
+                  <img src="../images/shop/product-13-1-96x96.jpg" alt="" class="rounded-md w-full h-full">
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <a href="#" class="hover:text-primary">Rustic Marble Car</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1">$899.82</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-b border-dashed w-full py-5 mb-3">
+              <h2 class="text-xl font-bold">Filter By Tags</h2>
+            </div>
+            <div class="grid grid-cols-3 text-xs text-lighter gap-4">
+              <a href="#" class="border rounded-full text-center p-2 hover:bg-secondry hover:text-white">Collection</a>
+              <a href="#" class="border rounded-full text-center p-2 hover:bg-secondry hover:text-white">Food Pet</a>
+              <a href="#" class="border rounded-full text-center p-2 hover:bg-secondry hover:text-white">Kitten Food</a>
+              <a href="#" class="border rounded-full text-center p-2 hover:bg-secondry hover:text-white">Pet Essentials</a>
+              <a href="#" class="border rounded-full text-center p-2 hover:bg-secondry hover:text-white">Puppy</a>
+              <a href="#" class="border rounded-full text-center p-2 hover:bg-secondry hover:text-white">Treat</a>
+            </div>
+          </aside>
+          <section class="flex-1">
+            <div class="text-color flex items-center justify-between w-full text-sm py-5">
+              <div class="">
+                <a href="#" class="mr-2 text-lg"><i class="fa-solid fa-table"></i></a>
+                <a href="#" class="mr-4 text-lg"><i class="fa-solid fa-list"></i></a>
+                <select class="">
+                  <optgroup label="Default sorting">
+                    <option value="">Default sorting</option>
+                    <option value="">Sort by popularity</option>
+                    <option value="">Sort by average rating</option>
+                    <option value="">Sort by price: low to high</option>
+                    <option value="">Sort by price: high to low</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <p>Showing 1–12 of 19 results</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div class="cursor-pointer mb-5">
+                <div class="relative border border-dashed transition-all duration-300 rounded-md">
+                  <img src="../images/shop/product-12-1-350x350.jpg" class="w-full lg:h-66 max-h-96">
+                    <div class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5">
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-regular fa-heart text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-code-compare text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-magnifying-glass-plus text-lg"></i></a>
+                    </div>
+                    <div class="absolute bottom-8 w-full text-center">
+                      <button class="font-bold bg-secondary text-white rounded-full py-2 px-10 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"><i class="fa-solid fa-cart-shopping"></i> Read More</button>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1">$169.93</span>
+                  </div>
+                  <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cursor-pointer mb-5">
+                <div class="relative border border-dashed transition-all duration-300 rounded-md">
+                  <img src="../images/shop/product-9-1-350x350.jpg" class="w-full lg:h-66 max-h-96">
+                    <div class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5">
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-regular fa-heart text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-code-compare text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-magnifying-glass-plus text-lg"></i></a>
+                    </div>
+                    <div class="absolute bottom-8 w-full text-center">
+                      <button class="font-bold bg-secondary text-white rounded-full py-2 px-10 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"><i class="fa-solid fa-cart-shopping"></i> Read More</button>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1">$66.17</span>
+                  </div>
+                  <a href="#" class="hover:text-primary">Fantastic Marble Shoes</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cursor-pointer mb-5">
+                <div class="relative border border-dashed transition-all duration-300 rounded-md">
+                  <img src="../images/shop/product-8-1-350x350.jpg" class="w-full lg:h-66 max-h-96">
+                    <div class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5">
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-regular fa-heart text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-code-compare text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-magnifying-glass-plus text-lg"></i></a>
+                    </div>
+                    <div class="absolute bottom-8 w-full text-center">
+                      <button class="font-bold bg-secondary text-white rounded-full py-2 px-10 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"><i class="fa-solid fa-cart-shopping"></i> Read More</button>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1">$934.64</span>
+                  </div>
+                  <a href="#" class="hover:text-primary">Synergistic Rubber Gloves</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cursor-pointer mb-5">
+                <div class="relative border border-dashed transition-all duration-300 rounded-md">
+                  <img src="../images/shop/product-3-1-350x350.jpg" class="w-full lg:h-66 max-h-96">
+                    <div class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5">
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-regular fa-heart text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-code-compare text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-magnifying-glass-plus text-lg"></i></a>
+                    </div>
+                    <div class="absolute bottom-8 w-full text-center">
+                      <button class="font-bold bg-secondary text-white rounded-full py-2 px-10 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"><i class="fa-solid fa-cart-shopping"></i> Read More</button>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1">$60.40 – $98.32</span>
+                  </div>
+                  <a href="#" class="hover:text-primary">Lightweight Aluminum Clock</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cursor-pointer mb-5">
+                <div class="relative border border-dashed transition-all duration-300 rounded-md">
+                  <img src="../images/shop/product-12-1-350x350.jpg" class="w-full lg:h-66 max-h-96">
+                    <div class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5">
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-regular fa-heart text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-code-compare text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-magnifying-glass-plus text-lg"></i></a>
+                    </div>
+                    <div class="absolute bottom-8 w-full text-center">
+                      <button class="font-bold bg-secondary text-white rounded-full py-2 px-10 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"><i class="fa-solid fa-cart-shopping"></i> Read More</button>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1">$169.93</span>
+                  </div>
+                  <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cursor-pointer mb-5">
+                <div class="relative border border-dashed transition-all duration-300 rounded-md">
+                  <img src="../images/shop/product-9-1-350x350.jpg" class="w-full lg:h-66 max-h-96">
+                    <div class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5">
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-regular fa-heart text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-code-compare text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-magnifying-glass-plus text-lg"></i></a>
+                    </div>
+                    <div class="absolute bottom-8 w-full text-center">
+                      <button class="font-bold bg-secondary text-white rounded-full py-2 px-10 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"><i class="fa-solid fa-cart-shopping"></i> Read More</button>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1">$66.17</span>
+                  </div>
+                  <a href="#" class="hover:text-primary">Fantastic Marble Shoes</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cursor-pointer mb-5">
+                <div class="relative border border-dashed transition-all duration-300 rounded-md">
+                  <img src="../images/shop/product-8-1-350x350.jpg" class="w-full lg:h-66 max-h-96">
+                    <div class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5">
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-regular fa-heart text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-code-compare text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-magnifying-glass-plus text-lg"></i></a>
+                    </div>
+                    <div class="absolute bottom-8 w-full text-center">
+                      <button class="font-bold bg-secondary text-white rounded-full py-2 px-10 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"><i class="fa-solid fa-cart-shopping"></i> Read More</button>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1">$934.64</span>
+                  </div>
+                  <a href="#" class="hover:text-primary">Synergistic Rubber Gloves</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cursor-pointer mb-5">
+                <div class="relative border border-dashed transition-all duration-300 rounded-md">
+                  <img src="../images/shop/product-3-1-350x350.jpg" class="w-full lg:h-66 max-h-96">
+                    <div class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5">
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-regular fa-heart text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-code-compare text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-magnifying-glass-plus text-lg"></i></a>
+                    </div>
+                    <div class="absolute bottom-8 w-full text-center">
+                      <button class="font-bold bg-secondary text-white rounded-full py-2 px-10 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"><i class="fa-solid fa-cart-shopping"></i> Read More</button>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1">$60.40 – $98.32</span>
+                  </div>
+                  <a href="#" class="hover:text-primary">Lightweight Aluminum Clock</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cursor-pointer mb-5">
+                <div class="relative border border-dashed transition-all duration-300 rounded-md">
+                  <img src="../images/shop/product-12-1-350x350.jpg" class="w-full lg:h-66 max-h-96">
+                    <div class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5">
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-regular fa-heart text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-code-compare text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-magnifying-glass-plus text-lg"></i></a>
+                    </div>
+                    <div class="absolute bottom-8 w-full text-center">
+                      <button class="font-bold bg-secondary text-white rounded-full py-2 px-10 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"><i class="fa-solid fa-cart-shopping"></i> Read More</button>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1">$169.93</span>
+                  </div>
+                  <a href="#" class="hover:text-primary">Heavy Duty Wool Knife</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cursor-pointer mb-5">
+                <div class="relative border border-dashed transition-all duration-300 rounded-md">
+                  <img src="../images/shop/product-9-1-350x350.jpg" class="w-full lg:h-66 max-h-96">
+                    <div class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5">
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-regular fa-heart text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-code-compare text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-magnifying-glass-plus text-lg"></i></a>
+                    </div>
+                    <div class="absolute bottom-8 w-full text-center">
+                      <button class="font-bold bg-secondary text-white rounded-full py-2 px-10 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"><i class="fa-solid fa-cart-shopping"></i> Read More</button>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1">$66.17</span>
+                  </div>
+                  <a href="#" class="hover:text-primary">Fantastic Marble Shoes</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cursor-pointer mb-5">
+                <div class="relative border border-dashed transition-all duration-300 rounded-md">
+                  <img src="../images/shop/product-8-1-350x350.jpg" class="w-full lg:h-66 max-h-96">
+                    <div class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5">
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-regular fa-heart text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-code-compare text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-magnifying-glass-plus text-lg"></i></a>
+                    </div>
+                    <div class="absolute bottom-8 w-full text-center">
+                      <button class="font-bold bg-secondary text-white rounded-full py-2 px-10 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"><i class="fa-solid fa-cart-shopping"></i> Read More</button>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1">$934.64</span>
+                  </div>
+                  <a href="#" class="hover:text-primary">Synergistic Rubber Gloves</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cursor-pointer mb-5">
+                <div class="relative border border-dashed transition-all duration-300 rounded-md">
+                  <img src="../images/shop/product-3-1-350x350.jpg" class="w-full lg:h-66 max-h-96">
+                    <div class="flex flex-col items-end justify-center gap-2 absolute top-5 right-5">
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-regular fa-heart text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-code-compare text-lg"></i></a>
+                      <a href="#" class="rounded-full border flex items-center justify-center p-3 transition-all duration-300 hover:bg-secondry hover:text-white hover:border-secondary"><i class="fa-solid fa-magnifying-glass-plus text-lg"></i></a>
+                    </div>
+                    <div class="absolute bottom-8 w-full text-center">
+                      <button class="font-bold bg-secondary text-white rounded-full py-2 px-10 lg:px-8 text-sm transition-all duration-300 hover:bg-secondry"><i class="fa-solid fa-cart-shopping"></i> Read More</button>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-1 justify-center text-sm mt-2">
+                  <div>
+                    <span class="font-bold text-secondary text-lg mr-1">$60.40 – $98.32</span>
+                  </div>
+                  <a href="#" class="hover:text-primary">Lightweight Aluminum Clock</a>
+                  <div>
+                    <i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-solid fa-star text-xs" style="color: yellow;"></i
+                    ><i class="fa-regular fa-star text-xs"></i>
+                    <span class="text-lighter text-xs">(5 reviews)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!-- 
+        Footer
+     -->
+    <footer
+      class="text-sm text-color bg-center bg-no-repeat border-dashed border-primary"
+      style="background-image: url(../images/footer-bg.jpg)"
+    >
+      <div class="xl:container xl:m-auto">
+        <!-- FooterContent -->
+        <section class="border-b border-dashed border-primary px-12 my-12">
+          <div
+            class="grid grid-cols-1 items-start justify-center gap-8 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 xl:items-start"
+          >
+            <div
+              class="flex justify-center items-center flex-col gap-3 xl:items-start"
+            >
+              <a href="">
+                <img src="../images/logo.svg" alt="Footer-Logo" />
+              </a>
+              <p class="text-center xl:text-start">
+                We know pets are like family, so we are committed to providing
+                the highest-quality products that you can trust.
+              </p>
+              <p class="font-bold text-black"><span>icno</span>Hotline Order</p>
+              <p class="text-primary font-bold text-xl mb-2">(877) 834 1434</p>
+              <div class="flex">
+                <span
+                  class="rounded-full w-10 h-10 flex items-center justify-center mr-2 bg-inp cursor-pointer hover:bg-purpel hover:text-white"
+                  ><i class="fa-brands fa-facebook"></i
+                ></span>
+                <span
+                  class="rounded-full w-10 h-10 flex items-center justify-center mx-2 bg-inp cursor-pointer hover:bg-purpel hover:text-white"
+                  ><i class="fa-brands fa-twitter"></i
+                ></span>
+                <span
+                  class="rounded-full w-10 h-10 flex items-center justify-center mx-2 bg-inp cursor-pointer hover:bg-purpel hover:text-white"
+                  ><i class="fa-brands fa-instagram"></i
+                ></span>
+                <span
+                  class="rounded-full w-10 h-10 flex items-center justify-center mx-2 bg-inp cursor-pointer hover:bg-purpel hover:text-white"
+                  ><i class="fa-brands fa-pinterest"></i
+                ></span>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col xl:items-start"
+            >
+              <h2 class="font-bold mb-3 text-black">USEFUL LINKS</h2>
+              <ul class="">
+                <li class="my-3"><a href="">New Products</a></li>
+                <li class="my-3"><a href="">Best Sellers</a></li>
+                <li class="my-3"><a href="">Bundle & Save</a></li>
+                <li class="my-3"><a href="">Online Gift Card</a></li>
+                <li class="my-3"><a href="">Discount</a></li>
+                <li class="my-3"><a href="">Pet Store Locator</a></li>
+              </ul>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col xl:items-start"
+            >
+              <h2 class="font-bold mb-3 text-black">MY ACCOUNT</h2>
+              <ul class="">
+                <li class="my-3"><a href="">My Profile</a></li>
+                <li class="my-3"><a href="">My Order History</a></li>
+                <li class="my-3"><a href="">My Wish List</a></li>
+                <li class="my-3"><a href="">Order Tracking</a></li>
+                <li class="my-3"><a href="">Shipping Info</a></li>
+                <li class="my-3"><a href="">Shopping Cart</a></li>
+              </ul>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col xl:items-start"
+            >
+              <h2 class="font-bold mb-3 text-black">COMPANY</h2>
+              <ul class="">
+                <li class="my-3"><a href="">About Us</a></li>
+                <li class="my-3"><a href="">Careers</a></li>
+                <li class="my-3"><a href="">Blog</a></li>
+                <li class="my-3"><a href="">Affiliate</a></li>
+                <li class="my-3"><a href="">Contact Us</a></li>
+                <li class="my-3"><a href="">Gift Cards</a></li>
+              </ul>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col gap-4 sm:col-span-2 md:col-2 lg:col-span-4 xl:col-auto xl:items-start"
+            >
+              <h2 class="font-bold mb-4 text-black">NEWSLETTER</h2>
+              <p class="text-center xl:text-start">
+                Subscrible & get <span class="text-primary">10%</span> discount.
+                Get E-mail updates about our latest shop and
+                <span class="text-primary">special offers</span>.
+              </p>
+              <div class="relative w-full max-w-sm">
+                <input
+                  type="text"
+                  placeholder="Enter Your Email..."
+                  class="bg-inp rounded-full p-3 w-full focus:outline-purple-600 text-xs"
+                />
+                <span
+                  class="bg-purpel rounded-full absolute right-1.5 top-1.5 p-1.5 cursor-pointer"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    enable-background="new 0 0 24 24"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    width="15"
+                    class="fill-white"
+                  >
+                    <g>
+                      <rect fill="none" height="24" width="24" />
+                      <path
+                        d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h9v-2H4V8l8,5l8-5v5h2V6C22,4.9,21.1,4,20,4z M12,11L4,6h16L12,11z M19,15l4,4 l-4,4v-3h-4v-2h4V15z"
+                      />
+                    </g>
+                  </svg>
+                </span>
+              </div>
+              <p class="text-black font-bold flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 mr-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                  />
+                </svg>
+                Download Our App
+              </p>
+              <div class="flex items-center">
+                <img
+                  src="../images/App-Store.jpg"
+                  alt="App-Store"
+                  class="mr-3 cursor-pointer w-24 sm:w-32"
+                />
+                <img
+                  src="../images/Google-Play.jpg"
+                  alt="Google-Play"
+                  class="cursor-pointer w-24 sm:w-32"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CopyRight -->
+        <div
+          class="grid justify-center items-center md:grid-cols-2 lg:grid-cols-3 lg:container lg:m-auto pb-20"
+        >
+          <div class="text-center">
+            <p class="text-xs">
+              Copyright © 2022
+              <a href="" class="text-color hover:text-primary">Bolori</a>. All
+              rights reserved.
+            </p>
+          </div>
+          <div class="my-5 m-auto">
+            <img src="../images/payment.png" alt="Payment" />
+          </div>
+          <div class="text-center md:col-span-3 lg:col-span-1">
+            <a href="#" class="text-color text-xs hover:text-primary"
+              >Privacy & Cookie Policy</a
+            >
+            <span class="mx-2 text-xs">|</span>
+            <a href="#" class="text-color text-xs hover:text-primary"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/menu.js"></script>
+    <script src="../js/shop.js"></script>
+  </body>
+</html>
